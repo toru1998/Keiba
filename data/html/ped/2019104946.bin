@@ -1,0 +1,1298 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" id="html">
+<head>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="content-type" content="text/html; charset=euc-jp" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta http-equiv="content-style-type" content="text/css" />
+<link href="https://cdn.netkeiba.com/img.db/common/css/reset.css?20160421" rel="stylesheet" type="text/css" media="all" />
+<link href="https://cdn.netkeiba.com/img.db/common/css/common.css?20210819" rel="stylesheet" type="text/css" media="all" />
+<link href="https://cdn.netkeiba.com/img.db/common/css/db_detail.css?20180621" rel="stylesheet" type="text/css" media="all" />
+<link href="https://cdn.netkeiba.com/img.db/common/css/horse_detail.css?20220606" rel="stylesheet" type="text/css" media="all" />
+<link href="https://cdn.netkeiba.com/img.db/common/css/win.css?20160421" rel="stylesheet" type="text/css" media="all" />
+<link href="https://cdn.netkeiba.com/img.db/common/css/db_top.css?20160421" rel="stylesheet" type="text/css" media="all" />
+<link href="https://cdn.netkeiba.com/img.db/common/css/prettyPhoto.css?20160421" rel="stylesheet" type="text/css" />
+<link href="https://cdn.netkeiba.com/img.db/common/css/jquery.fancybox-1.3.4.css?20160421" rel="stylesheet" type="text/css" />
+<link href="https://cdn.netkeiba.com/img.db/common/css/db_classic_nk01.css?201911209" rel="stylesheet" type="text/css" />
+<!-- link rel="stylesheet" href="https://cdn.netkeiba.com/img.www/style/netkeiba.ja/css/common_header.css" type="text/css" -->
+<script language="javascript">
+<!--
+b = navigator.userAgent.toUpperCase();
+if(b.indexOf("MAC") >= 0)
+{
+cssFile = "mac.css";
+}
+else
+{
+cssFile = "win.css";
+}
+document.write("<link rel='stylesheet' type='text/css' href='https://cdn.netkeiba.com/img.db/common/css/" + cssFile + "'>");
+// -->
+</script>
+<script type="text/javascript" src="https://cdn.netkeiba.com/img.db/common/js/jquery-1.8.2.min.js?20160421"></script>
+<script type="text/javascript" src="https://cdn.netkeiba.com/img.db/common/js/jquery.cookie.js?20160421"></script>
+<script type="text/javascript" src="https://cdn.netkeiba.com/img.db/common/js/fontsize.js?20160421"></script>
+<script type="text/javascript" src="https://cdn.netkeiba.com/img.db/common/js/jquery.prettyPhoto.js?20160421"></script>
+<script type="text/javascript" src="https://cdn.netkeiba.com/img.db/common/js/jquery.fieldtag.js?20160421"></script>
+<script type="text/javascript" src="https://cdn.netkeiba.com/img.db/common/js/table_hover.js?20160421"></script>
+<script type="text/javascript" src="https://cdn.netkeiba.com/img.db/common/js/jquery.fancybox-1.3.4.pack.js?20160421"></script>
+<script type="text/javascript" src="https://cdn.netkeiba.com/img.db/common/js/jquery.easing-1.3.pack.js?20160421"></script>
+<script type="text/javascript" src="https://cdn.netkeiba.com/img.db/common/js/jquery.carouFredSel-6.2.0-packed.js?20160421"></script>
+<script type="text/javascript" src="https://cdn.netkeiba.com/img.db/common/js/jquery.touchSwipe.min.js?20160421"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.netkeiba.com/img.db/common/css/ajaxtabs.css?20160421" />
+<script type="text/javascript" src="https://cdn.netkeiba.com/img.db/common/js/ajaxtabs.js?20160421">
+/***********************************************
+* Ajax Tabs Content script v2.2- c Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+</script>
+<script type="text/javascript" src="https://cdn.netkeiba.com/img.db/common/js/get_ad_request.js"></script>
+<script type="text/javascript" src="/__utm.js"></script>
+<script type="text/javascript">
+<!--
+var _user_action_api_url    = 'https://cdn.netkeiba.com/img.user';
+var _newsapi_action_api_url = 'https://cdn.netkeiba.com/img.newsapi/';
+var _social_action_api_url  = 'https://db.netkeiba.com/v1.1/';
+var _bbs_action_api_url     = 'https://bbs.netkeiba.com/';
+// -->
+</script>
+<script type="text/javascript" src="https://cdn.netkeiba.com/img.user/common/js/user.action.js?2016042101"></script>
+<script type="text/javascript" src="https://cdn.netkeiba.com/img.newsapi//common/js/newsapi.action.js?2016042101"></script>
+<script type="text/javascript" src="https://db.netkeiba.com/v1.1//common/js/social.action.js"></script>
+<script type="text/javascript" src="https://cdn.netkeiba.com/img.bbs/common/js/bbs.action.js?2018053101"></script>
+<script type="text/javascript" src="https://cdn.netkeiba.com/img.regist.sp//common/js/monthly_goods_link.js?2017080201"></script>
+
+<meta http-equiv="content-language" content="ja">
+<meta name="viewport" content="width=device-960px">
+<meta name="format-detection" content="telephone=no" />
+<meta name="description" content="スプリットザシー (Sprit the Sea)の血統表の競走馬データです。競走成績、血統情報、産駒情報などをはじめ、50万頭以上の競走馬・騎手・調教師・馬主・生産者・レースの全データがご覧いただけます。" />
+<meta name="keywords" content="競馬情報,競走馬,騎手,レース,調教師,馬主,検索,データベース,JRA,netkeiba.com,ネット競馬" />
+<meta name="thumbnail" content="https://cdn.netkeiba.com/img.db.sp/show_photo.php?horse_id=2019104946&no=spdb&tn=&tmp=no&default_image=netkeiba" />
+<!-- ogp用 -->
+<meta property="og:site_name" content="netkeiba.com" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="スプリットザシー (Sprit the Sea)の血統表 | 競走馬データ - netkeiba.com" />
+<meta property="og:url" content="https://db.netkeiba.com/horse/ped/2019104946/" />
+<meta property="og:description" content="スプリットザシー (Sprit the Sea)の血統表の競走馬データです。競走成績、血統情報、産駒情報などをはじめ、50万頭以上の競走馬、騎手・調教師・馬主・生産者の全データがご覧いただけます。" />
+<meta property="og:image" content="https://cdn.netkeiba.com/img.db.sp/show_photo.php?horse_id=2019104946&no=spdb&tn=&tmp=no&default_image=netkeiba" />
+<!-- Twitter用 -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:site" content="@netkeiba">
+<!-- Facebook用 -->
+<meta property="fb:admins" content="30367" />
+<!-- アノテーション -->
+<link rel="canonical" href="https://db.netkeiba.com/horse/ped/2019104946/" />
+<link rel="alternate" media="only screen and (max-width: 640px)" href="https://db.sp.netkeiba.com/horse/ped/2019104946/" />
+<link rel="alternate" href="https://db.netkeiba.com/horse/ped/2019104946/"  hreflang="ja" />
+<link rel="alternate" href="https://db.netkeiba.com/horse/ped/2019104946/"  hreflang="x-default" />
+<link rel="alternate" href="https://en.netkeiba.com/db/horse/ped/2019104946/" hreflang="en" />
+<link rel="alternate" type="application/rss+xml" href="https://rss.netkeiba.com/?pid=rss_netkeiba&site=netkeiba" />
+<link rel="apple-touch-icon" href="https://cdn.netkeiba.com/img.sp/common/img/common/icon_home.png" />
+<title>スプリットザシー (Sprit the Sea)の血統表 | 競走馬データ - netkeiba.com</title>
+
+
+
+
+<!-- Google Tag Manager -->
+<script>
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({
+'itemInfo': '','memberRank': 'NotLogin','memberId': ''
+});
+</script>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K6PJT6');</script>
+<!-- End Google Tag Manager -->
+</head>
+<body class="db " id="horse_detail">
+<noscript>
+お客様のブラウザはジャバスクリプト（JavaScript）に対応していないか無効になっています。
+</noscript>
+<div id="page">
+
+<link rel="stylesheet" href="https://cdn.netkeiba.com/img.www/style/netkeiba.ja/css/pc_header.css?20231115" type="text/css" media="screen" />
+<style>
+* {
+margin: 0;
+padding: 0;
+font-size: 100%;
+/*vertical-align: baseline;*/
+text-shadow: none;
+-webkit-text-size-adjust: none !important;
+outline: none;
+}
+header .Header_Inner {
+width: unset;
+}
+header .Header_Inner .SiteToggleBtn01 a {
+min-width: unset;
+}
+</style>
+<p class="sp_nk_btn disp_none"><a href="http://www.netkeiba.com/?pid=go_sp" title="スマートフォン版へ"><img src="https://cdn.netkeiba.com/img.www/style/netkeiba.ja/image/sp_nk_link_02.png" alt="スマートフォン版へ" class="imgover" /></a></p>
+<header class="Header_Area fc">
+<div class="Header_Inner fc">
+<h1>
+<a href="https://www.netkeiba.com/?rf=logo" title="netkeiba.com">
+<img src="https://cdn.netkeiba.com/img.www/style/netkeiba.ja/image/common/netkeiba_logo02.png?20231003" alt="netkeiba.com">
+</a>
+</h1>
+<div class="DB_Search_Input">
+<form class="Search_Box" action="https://www.netkeiba.com/" method="POST">
+<input type="hidden" name="pid" value="search">
+<input type="hidden" name="type" value="db">
+<div class="InputTxt_Form_Box">
+<input class="Txt_Form" placeholder="馬名で検索" value="" type="text" name="word" id="keywords">
+</div><!-- / .InputTxt_Form -->
+<div class="Submit_Btn_Box">
+<svg xmlns="http://www.w3.org/2000/svg" width="41.05" height="41.05" viewBox="0 0 41.05 41.05" class="IconInput01">
+<g id="icon_search" transform="translate(-234.6 -459.7)">
+<circle cx="15.6" cy="15.6" r="15.6" transform="translate(236.1 461.2)" class="st0"/>
+<g>
+<path d="M275.2,498.2a1.335,1.335,0,0,1,0,2l-.1.1a1.335,1.335,0,0,1-2,0l-11.2-11.2a1.335,1.335,0,0,1,0-2l.1-.1a1.335,1.335,0,0,1,2,0Z" class="st1"/>
+</g>
+</g>
+</svg>
+<input class="Submit_Btn" type="submit" name="submit" value="検 索">
+</div><!-- / .Submit_Btn_Box -->
+</form>
+</div><!-- / .DB_Search_Input -->
+<div class="MyMenuWrap">
+<ul class="UserMyMenu fc">
+
+<li>
+<a href="https://regist.netkeiba.com/?pid=premium&rf=header">
+<span>プレミアムサービス</span>
+</a>
+</li>
+<li>
+<a href="https://race.netkeiba.com/bookmark/bookmark.html?rf=navi" class="Icon_Header Icon_MyfavHorse">
+<span>お気に入り馬</span>
+</a>
+</li>
+<li>
+<a href="https://regist.netkeiba.com/account/?pid=login" class="Icon_Header Icon_Login">
+<span>ログイン/会員登録</span>
+</a>
+</li>
+<li class="disp_none header_stage_area no_login_show">
+<a href="https://regist.netkeiba.com/?pid=stage_login&action=login&return_url=https://regist.netkeiba.com/">
+<span>(s)ログイン</span>
+</a>
+</li>
+<li class="disp_none header_stage_area no_login_show">
+<a href="https://regist.netkeiba.com/?pid=user_add_form&payment=nk_user&goods_cd=310409&opt=init">
+<span>(s)無料会員登録</span>
+</a>
+<li class="disp_none header_stage_area login_show">
+<a href="https://regist.netkeiba.com/?pid=stage_login&action=logout&return_url=https://regist.netkeiba.com/">
+<span>(s)ログアウト</span>
+</a>
+</li>
+</ul>
+<div class="SiteToggleBtn01 Keirin">
+<a href="https://keirin.netkeiba.com/?rf=nk_pc_header">
+<span class="LiveRace">LIVE</span>
+<img src="https://cdn.netkeiba.com/img.www/style/netkeiba.ja/image/common/icon_keirin01.png" alt="" width="21" height="16" class="KeirinLogoMark01">競輪
+</a>
+</div><!-- /.SiteToggleBtn01 -->
+</div>
+</div><!-- /.Header_Inner -->
+</header>
+<nav class="ContentNavi01">
+<ul class="fc">
+<li class="Top">
+<a href="https://www.netkeiba.com/?rf=navi" title="トップ" id="navi_link_top">トップ</a>
+</li>
+<li class="News">
+<a href="https://news.netkeiba.com/?rf=navi" title="ニュース" id="navi_link_news">ニュース</a>
+</li>
+<li class="Race">
+<a href="https://race.netkeiba.com/top/?rf=navi" title="レース" id="navi_link_race">レース</a>
+</li>
+<li class="Yoso">
+<a href="https://yoso.netkeiba.com/?access=init&rf=navi" title="予想" id="navi_link_yoso">予想</a>
+</li>
+<li class="Column">
+<a href="https://news.netkeiba.com/?pid=column_top&rf=navi" title="コラム" id="navi_link_column">コラム</a>
+</li>
+<!-- <li class="Shop New">
+<a href="https://shop.netkeiba.com/?rf=navi" title="ショップ" id="navi_link_shop">ショップ</a>
+</li> -->
+<li class="Tv">
+<a href="https://tv.netkeiba.com/?rf=navi" title="netkeibaTV" id="navi_link_tv">netkeibaTV</a>
+</li>
+<li class="Local">
+<a href="https://nar.netkeiba.com/top/?rf=navi" title="地方競馬" id="navi_link_nar">地方競馬</a>
+</li>
+<li class="Db">
+<a href="https://db.netkeiba.com/?rf=navi" title="データベース" id="navi_link_db">データベース</a>
+</li>
+<li class="Paper">
+<a href="https://yoso.netkeiba.com/senmonshi/?rf=navi" title="競馬新聞" id="navi_link_senmonshi">競馬新聞</a>
+</li>
+<li class="YosoCS">
+<a href="https://orepro.netkeiba.com/?rf=navi" title="俺プロ" id="navi_link_orepro">俺プロ</a>
+</li>
+<li class="Owner">
+<a href="https://owner.netkeiba.com/?rf=navi" title="一口馬主" id="navi_link_owner">一口馬主</a>
+</li>
+<li class="Pog">
+<a href="https://pog.netkeiba.com/?rf=navi" title="POG" id="navi_link_pog">POG</a>
+</li>
+<li class="Matome">
+<a href="https://dir.netkeiba.com/keibamatome/index.html?rf=navi" title="まとめ" id="navi_link_keibamatome">まとめ</a>
+</li>
+</ul>
+</nav><!-- /.ContentNavi01 -->
+<!-- Geniee Wrapper Head Tag -->
+<script>
+window.gnshbrequest = window.gnshbrequest || {cmd:[]};
+gnshbrequest.cmd.push(function(){
+gnshbrequest.registerPassback("1491447");
+gnshbrequest.registerPassback("1491448");
+gnshbrequest.registerPassback("1492793");
+gnshbrequest.registerPassback("1491462");
+gnshbrequest.forceInternalRequest();
+});
+</script>
+<script async src="https://cpt.geniee.jp/hb/v1/211239/47/wrapper.min.js"></script>
+<!-- /Geniee Wrapper Head Tag -->
+<script async src="https://cdn.netkeiba.com/img.racev4.sp/common/js/nd_util.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+show_user();
+});
+function show_user(){
+var is_stage = '';
+var is_user  = '';
+var is_alert = '';
+var is_sp    = '';
+var nickname = '';
+var user_img = '';
+if(is_sp) {
+$('.sp_nk_btn').show();
+}
+if(! is_stage) {
+$('.header_stage_area').remove();
+}
+if(is_user){
+//ログイン中
+$('.login_show').show();
+if(is_alert) {
+$('.Alert_New').show();
+}
+} else {
+//未ログイン
+$('.no_login_show').show();
+$('.login_show').remove();
+}
+}
+</script>
+
+<div class="genre_menu fc">
+<ul>
+<li ><a href="/" title="競馬データTOP">競馬データTOP</a></li>
+<li class="active"><a href="/?pid=horse_top" title="競走馬">競走馬</a></li>
+<li ><a href="/?pid=jockey_top" title="騎手">騎手</a></li>
+<li ><a href="/?pid=trainer_top" title="調教師">調教師</a></li>
+<li ><a href="/?pid=owner_top" title="馬主">馬主</a></li>
+<li ><a href="/?pid=breeder_top" title="生産者">生産者</a></li>
+<li ><a href="/?pid=race_top" title="レース">レース</a></li>
+<li ><a href="/?pid=classic_index" title="クラシック">クラシック</a></li>
+</ul>
+</div><!-- /.genre_menu -->
+<div id="contents">
+<div id="db_main_box" class="fc">
+<div class="db_head fc">
+<div class="db_head_name fc">
+
+<div class="horse_title">
+<h1>スプリットザシー</h1>
+<p class="eng_name">
+<a href="https://en.netkeiba.com/db/horse/2019104946/" style="color:#FFF;">Sprit the Sea</a>
+</p>
+
+<p class="txt_01">抹消　牝　鹿毛 </p>
+</div><!-- /.horse_title" -->
+
+<div class="HorseRegist_BtnBox fc">
+<!-- social api_community_show_horse_bookmark_link -->
+<div class="ShereBtn"><a href=""><img src="https://cdn.netkeiba.com/img.db/style/netkeiba.ja/image/db_head_btn_bg_01_shere.png" alt="" />共有</a></div>
+<span id="HorseBookmarkLink"></span>
+<script type="text/javascript">
+$( document ).ready( function() {
+showHorseBookmarkLink( 'HorseBookmarkLink', '2019104946' );
+} );
+</script>
+
+</div><!-- /.HorseRegist_BtnBox -->
+<div class="SherePopup01">
+<span class="PopupTitle01">シェアする</span>
+<span class="SherePopupCloseBtn"></span>
+<ul class="ShereMenuList">
+<li>
+<a href="https://twitter.com/share?text=_share_title_&amp;url=_share_url_" rel="nofollow" target="_blank" class="Sns_Btn" id="sns_twitter">
+<span class="ShereIcon TwIcon"></span>
+<span>X</span>
+</a>
+</li>
+<li>
+<a href="https://www.facebook.com/sharer/sharer.php?u=_share_url_" target="_blank" class="Sns_Btn" id="sns_facebook">
+<span class="ShereIcon FbIcon"></span>
+<span>Facebook</span>
+</a>
+</li>
+<li>
+<a href="https://social-plugins.line.me/lineit/share?url=_share_url_&amp;text=_share_title_" target="_blank" class="Sns_Btn" id="sns_line">
+<span class="ShereIcon LineIcon"></span>
+<span>LINE</span>
+</a>
+</li>
+<li>
+<a href="javascript:void(0);" onclick="clipURL();" class="Sns_Btn">
+<span class="ShereIcon CopyIcon"></span>
+<span>URLをコピー</span>
+</a>
+</li>
+</ul>
+<script>
+function clipURL() {
+$('body').append('<textarea id="currentURL" style="position:fixed;left:-100%;">'+location.href+'</textarea>');
+$('#currentURL').select();
+document.execCommand('copy');
+$('#currentURL').remove();
+swal("URLをコピーしました。");
+}
+</script>
+</div>
+<link rel="stylesheet" href="https://cdn.netkeiba.com/img.db/common/css/sweetalert_custom.css" type="text/css" media="screen">
+<script src="https://cdn.netkeiba.com/img.db/common/js/sweetalert.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/encoding-japanese/2.0.0/encoding.min.js"></script>
+<script>
+$(function(){
+var share_title = '';
+var page_title = document.title;
+if(page_title){
+var ary_title = page_title.split('').map((v) => v.charCodeAt());
+var encode_title = Encoding.convert(ary_title, 'UTF8', 'UNICODE');
+share_title = Encoding.urlEncode(encode_title);
+}
+$("[id^='sns_']").click(function(){
+var replace_url = '';
+var cur_url = encodeURIComponent('https://db.netkeiba.com'+location.pathname+location.search+'&rf=share');
+replace_url = $(this).attr('href').replace('_share_title_', share_title).replace('_share_url_', cur_url);
+$(this).attr("href", replace_url);
+});
+// 共有ポップアップ
+var current_scrollY;
+$(".ShereBtn a").on("click", function(){
+var msg = '';
+var url = '';
+if (typeof window.plugins === 'object') {
+window.plugins.socialsharing.shareWithOptions({
+message: msg,
+url: url
+});
+return false;
+}
+current_scrollY = $(window).scrollTop();
+$(".SherePopup01").addClass("OpenDraw");
+$("#page").addClass("ViewOut");
+$("#page.ViewOut").css({
+top: -1 * current_scrollY,
+height:'auto'
+});
+$("#page").append("<div class='ModalOverlay'></div>");
+return false;
+});
+// 閉じる
+$(document).on("touchend click", ".SherePopupCloseBtn,.ModalOverlay", function(){
+$(".SherePopup01").removeClass("OpenDraw");
+$("#page.ViewOut").attr({ style: ''}).removeClass("ViewOut");
+$(".ModalOverlay").remove();
+$('body').css({'position':'static'});
+$( 'html, body' ).prop( { scrollTop: current_scrollY } );
+return false;
+event.preventDefault();
+});
+});
+</script>
+</div><!-- /.db_head_name -->
+
+<div class="db_head_regist fc">
+<ul class="db_detail_menu">
+<li>
+</li>
+<li>
+<a href="/horse/2019104946/" title="スプリットザシーのプロフィールTOP" >TOP</a>
+</li>
+<li>
+<a href="/horse/result/2019104946/" title="スプリットザシーの戦績" >戦績</a>
+</li>
+<li>
+<a href="/horse/ped/2019104946/" title="スプリットザシーの血統"  class="active" >血統</a>
+</li>
+
+<li>
+<a href="/?pid=horse_board&id=2019104946" title="スプリットザシーの掲示板" >掲示板</a>
+</li>
+<li>
+<a href="https://db.netkeiba.com/?pid=horse_photo&id=2019104946" title="スプリットザシーの写真" >写真</a>
+</li>
+<li>
+<a href="/?pid=horse_training&id=2019104946" title="スプリットザシーの調教" ><img src="https://cdn.netkeiba.com/img.db//style/netkeiba.ja/image/icon_premium_01.png" alt="" class="png_img" />調教</a>
+</li>
+<li>
+<a href="/?pid=horse_race_comment&id=2019104946" title="スプリットザシーのレース後短評" ><img src="https://cdn.netkeiba.com/img.db//style/netkeiba.ja/image/icon_premium_01.png" alt="" class="png_img" />短評</a>
+</li>
+<li>
+<a href="/?pid=horse_kyusya_comment&id=2019104946" title="スプリットザシーの厩舎コメント" ><img src="https://cdn.netkeiba.com/img.db//style/netkeiba.ja/image/icon_premium_01.png" alt="" class="png_img" />コメント</a>
+</li>
+<li>
+<a href="/?pid=horse_paddock_movie&id=2019104946" title="スプリットザシーのパドック映像" ><img src="https://cdn.netkeiba.com/img.db//style/netkeiba.ja/image/icon_premium_01.png" alt="" class="png_img" />パドック映像</a>
+</li>
+<li>
+<a href="/?pid=horse_photo_paddock&id=2019104946" title="スプリットザシーのフォトパドック" ><img src="https://cdn.netkeiba.com/img.db//style/netkeiba.ja/image/icon_premium_01.png" alt="" class="png_img" />フォトパドック</a>
+</li>
+<li>
+<a href="https://db.netkeiba.com/v1.1/?pid=horse_reviewer_list&id=2019104946" title="スプリットザシーのみんなの評価" >みんなの評価</a>
+</li>
+<li>
+<a href="https://db.netkeiba.com/community/?pid=horse_info_next&id=2019104946" title="スプリットザシーの次走・近況情報" >近況</a>
+</li>
+
+
+</ul>
+</div><!-- /.db_head_regist -->
+</div><!-- /.db_head -->
+</div><!-- / #db_main_box -->
+<div class="db_main_deta mb30">
+
+<div class="cate_bar">
+<h2>5代血統表</h2>
+</div>
+<diary_snap>
+<table cellpadding="0" cellspacing="1" summary="5代血統表" class="blood_table detail">
+<tr>
+<td width="20%" rowspan="16" class="b_ml">
+<a href="/horse/2002100816/">ディープインパクト
+
+</a>
+<br />2002 鹿毛
+<br />[<a href="/horse/ped/2002100816/">血統</a>][<a href="/horse/sire/2002100816/">産駒</a>]
+<br />Halo系
+</td>
+<td width="20%" rowspan="8" class="b_ml">
+<a href="/horse/000a00033a/">サンデーサイレンス
+<br />Sunday Silence(米)
+</a>
+<br />1986 青鹿毛
+<br />[<a href="/horse/ped/000a00033a/">血統</a>][<a href="/horse/sire/000a00033a/">産駒</a>]
+</td>
+<td width="20%" rowspan="4" class="b_ml">
+<a href="/horse/000a0012bf/">Halo
+
+</a>
+<br />1969 黒鹿毛
+<br />[<a href="/horse/ped/000a0012bf/">血統</a>][<a href="/horse/sire/000a0012bf/">産駒</a>]
+</td>
+<td width="20%" rowspan="2" class="b_ml">
+<a href="/horse/000a000f2b/">Hail to Reason</a>
+<br />1958 黒鹿毛
+</td>
+<td width="20%" height="20" class="b_ml">
+<a href="/horse/000a001042/">Turn-to</a>
+</td>
+</tr>
+<tr>
+<td height="20" class="b_fml">
+<a href="/horse/000a0078a6/">Nothirdchance</a>
+</td>
+</tr>
+<tr>
+<td rowspan="2" class="b_fml">
+<a href="/horse/000a007459/">Cosmah</a>
+<br />1953 鹿毛
+</td>
+<td height="20" class="b_ml">
+<a href="/horse/000a0013f0/">Cosmic Bomb</a>
+</td>
+</tr>
+<tr>
+<td height="20" class="b_fml">
+<a href="/horse/000a0072a0/">Almahmoud</a>
+</td>
+</tr>
+<tr>
+<td rowspan="4" class="b_fml">
+<a href="/horse/000a008c1e/">Wishing Well
+
+</a>
+<br />1975 鹿毛
+<br />[<a href="/horse/ped/000a008c1e/">血統</a>][<a href="/horse/mare/000a008c1e">産駒</a>]
+</td>
+<td rowspan="2" class="b_ml">
+<a href="/horse/000a0019b6/">Understanding</a>
+<br />1963 栗毛
+</td>
+<td height="20" class="b_ml">
+<a href="/horse/000a000e20/">Promised Land</a>
+</td>
+</tr>
+<tr>
+<td height="20" class="b_fml">
+<a href="/horse/000a006c87/">Pretty Ways</a>
+</td>
+</tr>
+<tr>
+<td rowspan="2" class="b_fml">
+<a href="/horse/000a008c1d/">Mountain Flower</a>
+<br />1964 鹿毛
+</td>
+<td height="20" class="b_ml">
+<a href="/horse/000a0019ba/">Montparnasse</a>
+</td>
+</tr>
+<tr>
+<td height="20" class="b_fml">
+<a href="/horse/000a008c1c/">Edelweiss</a>
+</td>
+</tr>
+<tr>
+<td rowspan="8" class="b_fml">
+<a href="/horse/000a0003a2/">ウインドインハーヘア
+<br />Wind in Her Hair(愛)
+</a>
+<br />1991 鹿毛
+<br />[<a href="/horse/ped/000a0003a2/">血統</a>][<a href="/horse/mare/000a0003a2/">産駒</a>]
+</td>
+<td rowspan="4" class="b_ml">
+<a href="/horse/000a001cb4/">Alzao
+
+</a>
+<br />1980 鹿毛
+<br />[<a href="/horse/ped/000a001cb4/">血統</a>][<a href="/horse/sire/000a001cb4/">産駒</a>]
+</td>
+<td rowspan="2" class="b_ml">
+<a href="/horse/000a001205/">Lyphard</a>
+<br />1969 鹿毛
+</td>
+<td height="20" class="b_ml">
+<a href="/horse/000a000e04/">Northern Dancer</a>
+</td>
+</tr>
+<tr>
+<td height="20" class="b_fml">
+<a href="/horse/000a007c8d/">Goofed</a>
+</td>
+</tr>
+<tr>
+<td rowspan="2" class="b_fml">
+<a href="/horse/000a009170/">Lady Rebecca</a>
+<br />1971 鹿毛
+</td>
+<td height="20" class="b_ml">
+<a href="/horse/000a000dd9/">Sir Ivor</a>
+</td>
+</tr>
+<tr>
+<td height="20" class="b_fml">
+<a href="/horse/000a007930/">Pocahontas</a>
+</td>
+</tr>
+<tr>
+<td rowspan="4" class="b_fml">
+<a href="/horse/000a00922c/">Burghclere
+
+</a>
+<br />1977 鹿毛
+<br />[<a href="/horse/ped/000a00922c/">血統</a>][<a href="/horse/mare/000a00922c/">産駒</a>]
+</td>
+<td rowspan="2" class="b_ml">
+<a href="/horse/000a000e0d/">Busted</a>
+<br />1963 栗毛
+</td>
+<td height="20" class="b_ml">
+<a href="/horse/000a000ec9/">Crepello</a>
+</td>
+</tr>
+<tr>
+<td height="20" class="b_fml">
+<a href="/horse/000a000852/">Sans le Sou</a>
+</td>
+</tr>
+<tr>
+<td rowspan="2" class="b_fml">
+<a href="/horse/000a008341/">Highclere</a>
+<br />1971 鹿毛
+</td>
+<td height="20" class="b_ml">
+<a href="/horse/000a000fd2/">Queen's Hussar</a>
+</td>
+</tr>
+<tr>
+<td height="20" class="b_fml">
+<a href="/horse/000a008340/">Highlight</a>
+</td>
+</tr>
+<tr>
+<td width="20%" rowspan="16" class="b_fml">
+<a href="/horse/000a013da9/">ランドオーバーシー
+<br />Land Over Sea(米)
+</a>
+<br />2013 栗毛
+<br />[<a href="/horse/ped/000a013da9/">血統</a>][<a href="/horse/mare/000a013da9/">産駒</a>]
+<br />FNo.[8-c]
+</td>
+<td width="20%" rowspan="8" class="b_ml">
+<a href="/horse/000a011cf9/">Bellamy Road
+
+</a>
+<br />2002 黒鹿毛
+<br />[<a href="/horse/ped/000a011cf9/">血統</a>][<a href="/horse/sire/000a011cf9/">産駒</a>]
+</td>
+<td width="20%" rowspan="4" class="b_ml">
+<a href="/horse/000a01109b/">Concerto
+
+</a>
+<br />1994 栗毛
+<br />[<a href="/horse/ped/000a01109b/">血統</a>][<a href="/horse/sire/000a01109b/">産駒</a>]
+</td>
+<td width="20%" rowspan="2" class="b_ml">
+<a href="/horse/000a001b87/">Chief's Crown</a>
+<br />1982 鹿毛
+</td>
+<td width="20%" height="20" class="b_ml">
+<a href="/horse/000a0000d3/">Danzig</a>
+</td>
+</tr>
+<tr>
+<td height="20" class="b_fml">
+<a href="/horse/000a00909c/">Six Crowns</a>
+</td>
+</tr>
+<tr>
+<td rowspan="2" class="b_fml">
+<a href="/horse/000a0110cd/">Undeniably</a>
+<br />1987 栗毛
+</td>
+<td height="20" class="b_ml">
+<a href="/horse/000a0010e2/">In Reality</a>
+</td>
+</tr>
+<tr>
+<td height="20" class="b_fml">
+<a href="/horse/000a0099b5/">Past Forgetting</a>
+</td>
+</tr>
+<tr>
+<td rowspan="4" class="b_fml">
+<a href="/horse/000a011d08/">Hurry Home Hillary
+
+</a>
+<br />1995 黒鹿毛
+<br />[<a href="/horse/ped/000a011d08/">血統</a>][<a href="/horse/mare/000a011d08/">産駒</a>]
+</td>
+<td rowspan="2" class="b_ml">
+<a href="/horse/000a00207d/">Deputed Testamony</a>
+<br />1980 鹿毛
+</td>
+<td height="20" class="b_ml">
+<a href="/horse/000a00207c/">Traffic Cop</a>
+</td>
+</tr>
+<tr>
+<td height="20" class="b_fml">
+<a href="/horse/000a008da2/">Proof Requested</a>
+</td>
+</tr>
+<tr>
+<td rowspan="2" class="b_fml">
+<a href="/horse/000a011d07/">Ten Cents a Turn</a>
+<br />1990 鹿毛
+</td>
+<td height="20" class="b_ml">
+<a href="/horse/000a001bda/">Cozzene</a>
+</td>
+</tr>
+<tr>
+<td height="20" class="b_fml">
+<a href="/horse/000a011046/">Rub al Khali</a>
+</td>
+</tr>
+<tr>
+<td rowspan="8" class="b_fml">
+<a href="/horse/000a013cce/">Belle Watling
+
+</a>
+<br />2005 栗毛
+<br />[<a href="/horse/ped/000a013cce/">血統</a>][<a href="/horse/mare/000a013cce/">産駒</a>]
+</td>
+<td rowspan="4" class="b_ml">
+<a href="/horse/000a002133/">Pulpit
+
+</a>
+<br />1994 鹿毛
+<br />[<a href="/horse/ped/000a002133/">血統</a>][<a href="/horse/sire/000a002133/">産駒</a>]
+</td>
+<td rowspan="2" class="b_ml">
+<a href="/horse/000a001d37/">A.P. Indy</a>
+<br />1989 黒鹿毛
+</td>
+<td height="20" class="b_ml">
+<a href="/horse/000a0015fc/">Seattle Slew</a>
+</td>
+</tr>
+<tr>
+<td height="20" class="b_fml">
+<a href="/horse/000a009821/">Weekend Surprise</a>
+</td>
+</tr>
+<tr>
+<td rowspan="2" class="b_fml">
+<a href="/horse/000a00acaa/">Preach</a>
+<br />1989 鹿毛
+</td>
+<td height="20" class="b_ml">
+<a href="/horse/000a001607/">Mr. Prospector</a>
+</td>
+</tr>
+<tr>
+<td height="20" class="b_fml">
+<a href="/horse/000a00aca9/">Narrate</a>
+</td>
+</tr>
+<tr>
+<td rowspan="4" class="b_fml">
+<a href="/horse/000a0138cb/">Polly Adler
+
+</a>
+<br />1993 鹿毛
+<br />[<a href="/horse/ped/000a0138cb/">血統</a>][<a href="/horse/mare/000a0138cb/">産駒</a>]
+</td>
+<td rowspan="2" class="b_ml">
+<a href="/horse/000a000187/">ハウスバスター</a>
+<br />1987 黒鹿毛
+</td>
+<td height="20" class="b_ml">
+<a href="/horse/000a00184b/">Mt. Livermore</a>
+</td>
+</tr>
+<tr>
+<td height="20" class="b_fml">
+<a href="/horse/000a009c53/">Big Dreams</a>
+</td>
+</tr>
+<tr>
+<td rowspan="2" class="b_fml">
+<a href="/horse/000a0092eb/">Honest and True</a>
+<br />1977 鹿毛
+</td>
+<td height="20" class="b_ml">
+<a href="/horse/000a000477/">Mr. Leader</a>
+</td>
+</tr>
+<tr>
+<td height="20" class="b_fml">
+<a href="/horse/000a0084d6/">Tell Meno Lies</a>
+</td>
+</tr>
+</table>
+<diary_snap_cut>
+<div class="blood_cross">
+
+5代目までに生じたクロス<br />
+<br />
+なし
+</div><!-- /.blood_cross -->
+</diary_snap_cut>
+</diary_snap>
+<div class="diary_snap_write_box">
+<p><a href="https://db.netkeiba.com/?pid=diary_snapshot&snap=aHR0cDovL2RiLm5ldGtlaWJhLmNvbS8/cGlkPWhvcnNlX3BlZGlncmVlJmlkPTIwMTkxMDQ5NDY=&meta=horse_pedigree" title="ひとこと日記を書く"><img src="https://cdn.netkeiba.com/img.db//style/netkeiba.ja/image/prof_btn_diary_write_01.png" class="imgover" /></a></p>
+<p>※この馬の血統について、日記を書くことができます。</p>
+</div><!-- /.diary_snap_write_box -->
+<div class="relative_info fc">
+<div class="cate_bar_s">
+<h2>兄弟・近親</h2>
+</div><!-- /.cate_bar_s -->
+
+<div class="brother">
+<table cellpadding="0" cellspacing="1" summary="兄弟馬" class="nk_tb_common race_table_01">
+<caption>兄弟</caption>
+<tr>
+<th>馬名</th>
+<th>性</th>
+<th>生年</th>
+<th>&nbsp;</th>
+</tr>
+<tr>
+<td class="txt_l"><a href="/horse/2022105552/" title="ランドオーバーシーの2022">ランドオーバーシーの2022</a></td>
+<td>牡</td>
+<td><a href="/?pid=horse_list&birthyear=2022">2022</a></td>
+<td class="txt_l">
+<a href="/horse/ped/2022105552/">[血]</a>
+
+<a href="/horse/bbs/2022105552/">[掲]</a>
+<a href="/horse/pic/2022105552/">[写]</a>
+
+
+</td>
+</tr><tr>
+<td class="txt_l"><a href="/horse/2021105271/" title="サトノエピック">サトノエピック</a></td>
+<td>牡</td>
+<td><a href="/?pid=horse_list&birthyear=2021">2021</a></td>
+<td class="txt_l">
+<a href="/horse/ped/2021105271/">[血]</a>
+
+<a href="/horse/bbs/2021105271/">[掲]</a>
+<a href="/horse/pic/2021105271/">[写]</a>
+<a href="https://pog.netkeiba.com/?pid=pog_regist_list&horseid=2021105271"><img src="/style/netkeiba.ja/image/pog_btn_02.gif" border="0" title="POGに登録" style="vertical-align:middle;"></a>
+
+</td>
+</tr><tr>
+<td class="txt_l"><a href="/horse/2020103093/" title="プレジャークルーズ">プレジャークルーズ</a></td>
+<td>牝</td>
+<td><a href="/?pid=horse_list&birthyear=2020">2020</a></td>
+<td class="txt_l">
+<a href="/horse/ped/2020103093/">[血]</a>
+
+<a href="/horse/bbs/2020103093/">[掲]</a>
+<a href="/horse/pic/2020103093/">[写]</a>
+
+
+</td>
+</tr><tr>
+<td class="txt_l"><a href="/horse/2018104834/" title="アリエノール">アリエノール</a></td>
+<td>牝</td>
+<td><a href="/?pid=horse_list&birthyear=2018">2018</a></td>
+<td class="txt_l">
+<a href="/horse/ped/2018104834/">[血]</a>
+
+<a href="/horse/bbs/2018104834/">[掲]</a>
+<a href="/horse/pic/2018104834/">[写]</a>
+
+
+</td>
+</tr>
+</table>
+
+</div><!-- / .brother -->
+
+<div class="uncle">
+<table cellpadding="0" cellspacing="1" summary="叔父母" class="nk_tb_common race_table_01">
+<caption>叔父母</caption>
+<tr>
+<th>馬名</th>
+<th>性</th>
+<th>生年</th>
+<th>&nbsp;</th>
+</tr>
+<tr>
+<td class="txt_l"><a href="/horse/000a0138ca/" title="War Story">War Story</a></td>
+<td>セ</td>
+<td><a href="/?pid=horse_list&birthyear=2012">2012</a></td>
+<td class="txt_l">
+<a href="/horse/ped/000a0138ca/">[血]</a>
+
+<a href="/horse/bbs/000a0138ca/">[掲]</a>
+<a href="/horse/pic/000a0138ca/">[写]</a>
+
+
+</td>
+</tr>
+</table>
+
+</div><!-- /.uncle -->
+</div><!-- / .relative_info -->
+<div class="mare_line">
+<div class="cate_bar_s">
+<h2>牝系図<span style="margin-left:2px;">(各馬の血統に移動します)</span></h2>
+</div><!-- /.cate_bar_s -->
+
+<div class="mare_line_box">
+<tt></tt>
+
+<a href="/horse/ped/000a013cce/"><span class="pink">Belle Watling</span></a>
+
+(牝
+2005
+栗毛
+<a href="/horse/sire/000a002133/">Pulpit</a>)
+
+
+<br />
+<tt>&nbsp;|--</tt>
+<a href="/horse/ped/000a0138ca/">War Story</a>
+
+&nbsp;[米]
+(セ
+2012
+栗毛
+<a href="/horse/sire/000a010a96/">Northern Afleet</a>)
+海外2勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt>1着&nbsp;-&nbsp;ハーランズホリデーS(G3)、モンマスカップS(G3)
+<br /><tt>&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt>2着&nbsp;-&nbsp;グリーンウッドCS(G3)
+<br /><tt>&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt>3着&nbsp;-&nbsp;ペガサスWC(G1)
+<br /><tt>&nbsp;`--</tt>
+
+<a href="/horse/ped/000a013da9/"><span class="pink">ランドオーバーシー</span></a>
+Land Over Sea&nbsp;[米]
+(牝
+2013
+栗毛
+<a href="/horse/sire/000a011cf9/">Bellamy Road</a>)
+海外2勝
+
+<br />
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</tt>1着&nbsp;-&nbsp;フェアグラウンズオークス(G2)
+<br /><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</tt>2着&nbsp;-&nbsp;ケンタッキーオークス(G1)、シャンデリアS(G1)
+<br /><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</tt>3着&nbsp;-&nbsp;デルマーデビュータントS(G1)
+<br /><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2018104834/"><span class="pink">アリエノール</span></a>
+
+(牝
+2018
+鹿毛
+<a href="/horse/sire/000a013047/">Nyquist</a>)
+3勝
+
+<br />
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2019104946/"><span class="pink"><b>スプリットザシー</b></span></a>
+
+(牝
+2019
+鹿毛
+<a href="/horse/sire/2002100816/">ディープインパクト</a>)
+1勝
+
+<br />
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2020103093/"><span class="pink">プレジャークルーズ</span></a>
+
+(牝
+2020
+栗毛
+<a href="/horse/sire/2001103114/">ダイワメジャー</a>)
+2勝、中央現役
+
+<br />
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2021105271/">サトノエピック</a>
+
+
+(牡
+2021
+鹿毛
+<a href="/horse/sire/2012102013/">キタサンブラック</a>)
+中央現役
+
+<br />
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2022105552/">ランドオーバーシーの2022</a>
+
+
+(牡
+2022
+鹿毛
+<a href="/horse/sire/2010104155/">エピファネイア</a>)
+
+
+<br />
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`--</tt>
+
+<a href="/horse/ped/2023103584/"><span class="pink">ランドオーバーシーの2023</span></a>
+
+(牝
+2023
+栗毛
+<a href="/horse/sire/2010104155/">エピファネイア</a>)
+
+
+<br />
+
+</div><!-- /.mare_line_box -->
+</div><!-- / .mare_line -->
+</div><!-- / .db_main_deta -->
+
+
+
+<div class="mb30">
+<!-- Geniee Wrapper Body Tag 1492793 -->
+<div data-cptid="1492793">
+<script>
+gnshbrequest.cmd.push(function() {
+gnshbrequest.applyPassback("1492793", "[data-cptid='1492793']");
+});
+</script>
+</div>
+<!-- /Geniee Wrapper Body Tag 1492793 -->
+</div>
+
+</div><!-- / #contents -->
+
+<footer>
+<div class="NkFooterArea">
+<div class="BtnPagetop">
+<a href="javascript:void(0)" title="ページトップへ"></a>
+</div><!-- /.BtnPagetop -->
+<script type="text/javascript">
+$(function() {
+$('.BtnPagetop a').click(function () {
+$('body,html').animate({
+scrollTop: 0
+}, 400);
+return false;
+});
+});
+</script>
+<div class="KeirinLink01">
+<a href="//keirin.netkeiba.com/?rf=nk_pc_footer" title="netkeirin"><img src="https://cdn.netkeiba.com/img.www/style/netkeiba.ja/image/common/PC_footer_bnr01.png" alt="いま競輪が熱い！nerkeirinで競輪を気軽に楽しもう" /></a>
+</div><!-- /.KeirinLink01 -->
+<dl class="FootSiteTitle fc">
+<dt>
+<a href="https://www.netkeiba.com/?rf=footer" title="netkeiba.com">
+<img src="https://cdn.netkeiba.com/img.www/style/netkeiba.ja/image/common/netkeiba_logo01.png" alt="netkeiba.com" />
+</a>
+</dt>
+<dd>
+<p>利用者数<strong>1700</strong>万人突破！<strong>No.1</strong>競馬サイト</p>
+</dd>
+</dl>
+<div class="FootWrap">
+<dl class="NkFoot01 NkFootCateLink">
+<dt>カテゴリ</dt>
+<dd class="fc">
+<ul>
+<li>
+<a href="https://news.netkeiba.com/?rf=footer" title="ニュース">ニュース</a>
+</li>
+<li>
+<a href="https://race.netkeiba.com/top/?rf=footer" title="レース">レース</a>
+</li>
+<li>
+<a href="https://yoso.netkeiba.com/?rf=footer" title="ウマい馬券">ウマい馬券</a>
+</li>
+<li>
+<a href="https://news.netkeiba.com/?pid=column_top&rf=footer" title="コラム">コラム</a>
+</li>
+<li>
+<a href="https://tv.netkeiba.com/?rf=footer" title="netkeibaTV">netkeibaTV</a>
+</li>
+<li>
+<a href="https://nar.netkeiba.com/top/?rf=footer" title="地方競馬">地方競馬</a>
+</li>
+<li>
+<a href="https://db.netkeiba.com/?rf=footer" title="データベース">データベース</a>
+</li>
+<li>
+<a href="https://orepro.netkeiba.com/?rf=footer" title="俺プロ">俺プロ</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="https://owner.netkeiba.com/?rf=footer" title="一口馬主">一口馬主</a>
+</li>
+<li>
+<a href="https://pog.netkeiba.com/?rf=footer" title="POG">POG</a>
+</li>
+<li>
+<a href="https://bbs.pc.keiba.findfriends.jp/?rf=footer" title="競馬広場">競馬広場</a>
+</li>
+<li>
+<a href="https://dir.netkeiba.com/keibamatome/index.html?rf=footer" title="まとめ">まとめ</a>
+</li>
+<li>
+<a href="https://yoso.netkeiba.com/senmonshi/?rf=footer" title="競馬新聞">競馬新聞</a>
+</li>
+<li>
+<a href="https://race.netkeiba.com/bookmark/bookmark.html?rf=footer" title="お気に入り馬">お気に入り馬</a>
+</li>
+<li>
+<a href="https://regist.netkeiba.com/?rf=footer" title="アカウント">アカウント</a>
+</li>
+</ul>
+</dd>
+</dl>
+<dl class="NkFoot01">
+<dt>ヘルプ＆ガイド</dt>
+<dd>
+<ul>
+<li>
+<a href="https://info.netkeiba.com/?rf=footer" title="お知らせ">お知らせ</a>
+</li>
+<li>
+<a href="https://regist.netkeiba.com/?pid=premium&rf=footer" title="プレミアムサービスのご案内">プレミアムサービスのご案内</a>
+</li>
+<li>
+<a href="https://regist.netkeiba.com/?pid=help&rf=footer" title="よくある質問・お問い合わせ">よくある質問・お問い合わせ</a>
+</li>
+</ul>
+</dd>
+</dl>
+<dl class="NkFoot01">
+<dt>netkeiba.comについて</dt>
+<dd>
+<ul>
+<li>
+<a href="https://www.netkeiba.com/recruit/?rf=footer" title="採用情報">採用情報</a>
+</li>
+<li>
+<a href="https://www.netkeiba.com/info/ad/?rf=footer" title="広告掲載について">広告掲載について</a>
+</li>
+<li>
+<a href="https://www.netkeiba.com/info/kiyaku.html?rf=footer" title="利用規約">利用規約</a>
+</li>
+<li>
+<a href="https://www.netdreamers.co.jp/company/about/privacy.html?rf=footer" title="プライバシーポリシー">プライバシーポリシー</a>
+</li>
+<li>
+<a href="https://www.netkeiba.com/info/guide.html?rf=footer" title="投稿ガイドライン">投稿ガイドライン</a>
+</li>
+<li>
+<a href="https://www.netkeiba.com/info/tokusyo.html?rf=footer" title="特定商取引法に基づく表記">特定商取引法に基づく表記</a>
+</li>
+<li>
+<a href="https://www.netdreamers.co.jp/?rf=footer" title="運営会社">運営会社</a>
+</li>
+</ul>
+</dd>
+</dl>
+<dl class="NkFoot01">
+<dt>スマホでnetkeiba</dt>
+<dd class="SpNkInfoImg">
+<img src="https://cdn.netkeiba.com/img.www/style/netkeiba.ja/image/common/img_nk_searchimg01.png" alt="検索" class="SearchImg01" />
+<img src="https://cdn.netkeiba.com/img.www/style/netkeiba.ja/image/common/img_nk_qr01.png" alt="バーコード" class="QrImg01" />
+</dd>
+<dt>アプリでサクサクnetkeiba</dt>
+<dd>
+<ul class="AprStoreList fc">
+<li>
+<a href="https://itunes.apple.com/jp/app/id464562684/" title="Appstore"><img src="https://cdn.netkeiba.com/img.www/style/netkeiba.ja/image/common/bnr_appstore_01.png" alt="Appstore" class="" /></a>
+</li>
+<li>
+<a href="https://play.google.com/store/apps/details?id=jp.co.netdreamers.netkeiba" title="googleplay"><img src="https://cdn.netkeiba.com/img.www/style/netkeiba.ja/image/common/bnr_googleplay_01.png?20210728" alt="googleplay" class="" /></a>
+</li>
+</ul>
+</dd>
+<dd class="Nk_Sns">
+<ul class="fc">
+<li>
+<a href="https://twitter.com/netkeiba" title="公式 X" class="Tw"></a>
+</li>
+<li>
+<a href="https://ja-jp.facebook.com/netkeiba" title="公式 Facebook" class="Fb"></a>
+</li>
+<li>
+<a href="https://line.me/R/ti/p/%40oa-netkeiba" title="LINE" class="Line"></a>
+</li>
+<li>
+<a href="http://www.youtube.com/user/netkeibaTV" title="netkeibaチャンネル" class="Yt"></a>
+</li>
+<li>
+<a href="https://www.instagram.com/netkeiba/" title="Instagram" class="Ig"></a>
+</li>
+<li>
+<a href="https://www.netkeiba.com/?pid=rss" title="RSS" class="Rss"></a>
+</li>
+</ul>
+</dd>
+</dl>
+</div><!-- /.FootWrap -->
+</div><!-- /.NkFooterArea -->
+<div class="GlobalFooterArea">
+<div class="FootWrap">
+<dl class="NkFoot02">
+<dt class="GfootIcon01 IconGame01">netkeiba.com 公式競馬ゲーム</dt>
+<dd>
+<ul>
+<li>
+<a href="https://www.netkeiba.com/game/umasta.html?rf=footer" target='_blank' title="うまいるスタジアム">みんなの愛馬とバトル！ <strong>うまいるスタジアム</strong></a>
+</li>
+</ul>
+</dd>
+<dt class="GfootIcon01 IconSisterSite01">netkeiba.com 姉妹サイト</dt>
+<dd>
+<ul>
+<li>
+<a href="//keirin.netkeiba.com/?rf=footer" target='_blank'>競輪総合メディア <strong>netkeirin(ネットケイリン)</strong></a>
+</li>
+</ul>
+</dd>
+</dl>
+<dl class="NkFoot02">
+<dt class="GfootIcon01 IconMedia01">関連メディア</dt>
+<dd>
+<ul>
+<li>
+<a href="https://sp.baseball.findfriends.jp/?rf=footer" target='_blank' title="週刊ベースボールONLINE">徹底取材！野球情報は <strong>週刊ベースボールONLINE</strong></a>
+</li>
+<li>
+<a href="https://sp.golf.findfriends.jp/?rf=footer" target='_blank' title="ワッグルオンライン">ゴルフレッスン情報サイト <strong>ワッグルオンライン</strong></a>
+</li>
+<li>
+<a href="https://recipe.sp.findfriends.jp/?rf=footer" target='_blank' title="KATSUYOレシピ">小林カツ代直伝！ <strong>KATSUYOレシピ</strong></a>
+</li>
+</ul>
+</dd>
+</dl>
+<dl class="NkFoot02">
+<dt class="GfootIcon01 IconSoftware01">ソフトウェア・プロダクト</dt>
+<dd>
+<ul>
+<li>
+<a href="https://smart.lets-ktai.jp/?rf=footer" target='_blank' title="SMART会員証">もっともセキュアな店舗売上向上アプリ <strong>SMART会員証</strong></a>
+</li>
+<li>
+<a href="https://lets-ktai.jp/?rf=footer" target='_blank' title="Let'sケータイ！">スマホサイト制作ASP <strong>Let'sケータイ！</strong></a>
+</li>
+<li>
+<a href="https://webspiral.jp/?rf=footer" target='_blank' title="WEB SPIRAL">サイト運営を劇的に効率化するCMS <strong>WEB SPIRAL</strong></a>
+</li>
+</ul>
+</dd>
+</dl>
+</div><!-- /.FootWrap -->
+<p class="CopyRight">
+<small>&copy; Net Dreamers Co., Ltd.</small>
+</p>
+</div><!-- /.GlobalFooterArea -->
+</footer>
+<!-- Google Tag Manager --><!-- remove gtm_20220924 -->
+<!-- End Google Tag Manager -->
+<!--
+<script src="https://genieedmp.com/dmp.js?c=3335"></script>
+-->
+<!-- / #page -->
+
+
+
+
+<div id="geniee_overlay_outer" style="position:fixed; bottom: 0px; width:100%; height:90px; left:0px; right:0px; margin:auto; z-index:1000000000; text-align: center;background-color: rgba(40, 40, 40, 0.2);">    <img src="https://js.gsspcln.jp/i/7c087a913cb9d4e76b672c4dc767c1a2.png" id="gn_interstitial_close_icon" style="height: 29px; width: 29px; display: block; position: absolute; top: 0px; left: 0px; right:0px; margin: 0px auto; z-index: 999999; transform: translateX(-378.5px);" onclick="document.getElementById('geniee_overlay_outer').style.display='none';">
+<!-- Geniee Wrapper Body Tag 1491462 -->
+<div data-cptid="1491462">
+<script>
+gnshbrequest.cmd.push(function() {
+gnshbrequest.applyPassback("1491462", "[data-cptid='1491462']");
+});
+</script>
+</div>
+<!-- /Geniee Wrapper Body Tag 1491462 -->
+</div>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-K6PJT6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager hoge -->
+</body>
+</html>

@@ -6,8 +6,12 @@ from bs4 import BeautifulSoup
 from urllib.request import urlopen
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from webdriver_manager.chrome import ChromeDriverManager
 
 from modules.constants import UrlPaths
+from selenium.webdriver.chrome.service import Service as ChromeService
+
+
 
 
 def scrape_kaisai_date(from_: str, to_: str):
@@ -41,6 +45,7 @@ def scrape_race_id_list(kaisai_date_list: list, from_shutuba=False, waiting_time
     ChromeDriverは要素を取得し終わらないうちに先に進んでしまうことがあるので、その場合の待機時間をwaiting_timeで指定。
     """
     race_id_list = []
+    #driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
     driver = webdriver.Chrome()
     print('getting race_id_list')
     for kaisai_date in tqdm(kaisai_date_list):

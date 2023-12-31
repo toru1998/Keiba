@@ -14,7 +14,6 @@ def get_rawdata_results(html_path_list: list):
             try:
                 html = f.read() #保存してあるbinファイルを読み込む
                 df = pd.read_html(html)[0] #メインとなるレース結果テーブルデータを取得
-                
                 soup = BeautifulSoup(html, "html.parser") #htmlをsoupオブジェクトに変換
 
                 #馬ID、騎手IDをスクレイピング

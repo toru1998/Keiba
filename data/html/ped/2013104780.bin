@@ -1,0 +1,3538 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" id="html">
+<head>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="content-type" content="text/html; charset=euc-jp" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta http-equiv="content-style-type" content="text/css" />
+<link href="https://cdn.netkeiba.com/img.db/common/css/reset.css?20160421" rel="stylesheet" type="text/css" media="all" />
+<link href="https://cdn.netkeiba.com/img.db/common/css/common.css?20210819" rel="stylesheet" type="text/css" media="all" />
+<link href="https://cdn.netkeiba.com/img.db/common/css/db_detail.css?20180621" rel="stylesheet" type="text/css" media="all" />
+<link href="https://cdn.netkeiba.com/img.db/common/css/horse_detail.css?20220606" rel="stylesheet" type="text/css" media="all" />
+<link href="https://cdn.netkeiba.com/img.db/common/css/win.css?20160421" rel="stylesheet" type="text/css" media="all" />
+<link href="https://cdn.netkeiba.com/img.db/common/css/db_top.css?20160421" rel="stylesheet" type="text/css" media="all" />
+<link href="https://cdn.netkeiba.com/img.db/common/css/prettyPhoto.css?20160421" rel="stylesheet" type="text/css" />
+<link href="https://cdn.netkeiba.com/img.db/common/css/jquery.fancybox-1.3.4.css?20160421" rel="stylesheet" type="text/css" />
+<link href="https://cdn.netkeiba.com/img.db/common/css/db_classic_nk01.css?201911209" rel="stylesheet" type="text/css" />
+<!-- link rel="stylesheet" href="https://cdn.netkeiba.com/img.www/style/netkeiba.ja/css/common_header.css" type="text/css" -->
+<script language="javascript">
+<!--
+b = navigator.userAgent.toUpperCase();
+if(b.indexOf("MAC") >= 0)
+{
+cssFile = "mac.css";
+}
+else
+{
+cssFile = "win.css";
+}
+document.write("<link rel='stylesheet' type='text/css' href='https://cdn.netkeiba.com/img.db/common/css/" + cssFile + "'>");
+// -->
+</script>
+<script type="text/javascript" src="https://cdn.netkeiba.com/img.db/common/js/jquery-1.8.2.min.js?20160421"></script>
+<script type="text/javascript" src="https://cdn.netkeiba.com/img.db/common/js/jquery.cookie.js?20160421"></script>
+<script type="text/javascript" src="https://cdn.netkeiba.com/img.db/common/js/fontsize.js?20160421"></script>
+<script type="text/javascript" src="https://cdn.netkeiba.com/img.db/common/js/jquery.prettyPhoto.js?20160421"></script>
+<script type="text/javascript" src="https://cdn.netkeiba.com/img.db/common/js/jquery.fieldtag.js?20160421"></script>
+<script type="text/javascript" src="https://cdn.netkeiba.com/img.db/common/js/table_hover.js?20160421"></script>
+<script type="text/javascript" src="https://cdn.netkeiba.com/img.db/common/js/jquery.fancybox-1.3.4.pack.js?20160421"></script>
+<script type="text/javascript" src="https://cdn.netkeiba.com/img.db/common/js/jquery.easing-1.3.pack.js?20160421"></script>
+<script type="text/javascript" src="https://cdn.netkeiba.com/img.db/common/js/jquery.carouFredSel-6.2.0-packed.js?20160421"></script>
+<script type="text/javascript" src="https://cdn.netkeiba.com/img.db/common/js/jquery.touchSwipe.min.js?20160421"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.netkeiba.com/img.db/common/css/ajaxtabs.css?20160421" />
+<script type="text/javascript" src="https://cdn.netkeiba.com/img.db/common/js/ajaxtabs.js?20160421">
+/***********************************************
+* Ajax Tabs Content script v2.2- c Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+</script>
+<script type="text/javascript" src="https://cdn.netkeiba.com/img.db/common/js/get_ad_request.js"></script>
+<script type="text/javascript" src="/__utm.js"></script>
+<script type="text/javascript">
+<!--
+var _user_action_api_url    = 'https://cdn.netkeiba.com/img.user';
+var _newsapi_action_api_url = 'https://cdn.netkeiba.com/img.newsapi/';
+var _social_action_api_url  = 'https://db.netkeiba.com/v1.1/';
+var _bbs_action_api_url     = 'https://bbs.netkeiba.com/';
+// -->
+</script>
+<script type="text/javascript" src="https://cdn.netkeiba.com/img.user/common/js/user.action.js?2016042101"></script>
+<script type="text/javascript" src="https://cdn.netkeiba.com/img.newsapi//common/js/newsapi.action.js?2016042101"></script>
+<script type="text/javascript" src="https://db.netkeiba.com/v1.1//common/js/social.action.js"></script>
+<script type="text/javascript" src="https://cdn.netkeiba.com/img.bbs/common/js/bbs.action.js?2018053101"></script>
+<script type="text/javascript" src="https://cdn.netkeiba.com/img.regist.sp//common/js/monthly_goods_link.js?2017080201"></script>
+
+<meta http-equiv="content-language" content="ja">
+<meta name="viewport" content="width=device-960px">
+<meta name="format-detection" content="telephone=no" />
+<meta name="description" content="フォーラウェイ (Fallaway)の血統表の競走馬データです。競走成績、血統情報、産駒情報などをはじめ、50万頭以上の競走馬・騎手・調教師・馬主・生産者・レースの全データがご覧いただけます。" />
+<meta name="keywords" content="競馬情報,競走馬,騎手,レース,調教師,馬主,検索,データベース,JRA,netkeiba.com,ネット競馬" />
+<meta name="thumbnail" content="https://cdn.netkeiba.com/img.db.sp/show_photo.php?horse_id=2013104780&no=spdb&tn=&tmp=no&default_image=netkeiba" />
+<!-- ogp用 -->
+<meta property="og:site_name" content="netkeiba.com" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="フォーラウェイ (Fallaway)の血統表 | 競走馬データ - netkeiba.com" />
+<meta property="og:url" content="https://db.netkeiba.com/horse/ped/2013104780/" />
+<meta property="og:description" content="フォーラウェイ (Fallaway)の血統表の競走馬データです。競走成績、血統情報、産駒情報などをはじめ、50万頭以上の競走馬、騎手・調教師・馬主・生産者の全データがご覧いただけます。" />
+<meta property="og:image" content="https://cdn.netkeiba.com/img.db.sp/show_photo.php?horse_id=2013104780&no=spdb&tn=&tmp=no&default_image=netkeiba" />
+<!-- Twitter用 -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:site" content="@netkeiba">
+<!-- Facebook用 -->
+<meta property="fb:admins" content="30367" />
+<!-- アノテーション -->
+<link rel="canonical" href="https://db.netkeiba.com/horse/ped/2013104780/" />
+<link rel="alternate" media="only screen and (max-width: 640px)" href="https://db.sp.netkeiba.com/horse/ped/2013104780/" />
+<link rel="alternate" href="https://db.netkeiba.com/horse/ped/2013104780/"  hreflang="ja" />
+<link rel="alternate" href="https://db.netkeiba.com/horse/ped/2013104780/"  hreflang="x-default" />
+<link rel="alternate" href="https://en.netkeiba.com/db/horse/ped/2013104780/" hreflang="en" />
+<link rel="alternate" type="application/rss+xml" href="https://rss.netkeiba.com/?pid=rss_netkeiba&site=netkeiba" />
+<link rel="apple-touch-icon" href="https://cdn.netkeiba.com/img.sp/common/img/common/icon_home.png" />
+<title>フォーラウェイ (Fallaway)の血統表 | 競走馬データ - netkeiba.com</title>
+
+
+
+
+<!-- Google Tag Manager -->
+<script>
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({
+'itemInfo': '','memberRank': 'NotLogin','memberId': ''
+});
+</script>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K6PJT6');</script>
+<!-- End Google Tag Manager -->
+</head>
+<body class="db " id="horse_detail">
+<noscript>
+お客様のブラウザはジャバスクリプト（JavaScript）に対応していないか無効になっています。
+</noscript>
+<div id="page">
+
+<link rel="stylesheet" href="https://cdn.netkeiba.com/img.www/style/netkeiba.ja/css/pc_header.css?20231115" type="text/css" media="screen" />
+<style>
+* {
+margin: 0;
+padding: 0;
+font-size: 100%;
+/*vertical-align: baseline;*/
+text-shadow: none;
+-webkit-text-size-adjust: none !important;
+outline: none;
+}
+header .Header_Inner {
+width: unset;
+}
+header .Header_Inner .SiteToggleBtn01 a {
+min-width: unset;
+}
+</style>
+<p class="sp_nk_btn disp_none"><a href="http://www.netkeiba.com/?pid=go_sp" title="スマートフォン版へ"><img src="https://cdn.netkeiba.com/img.www/style/netkeiba.ja/image/sp_nk_link_02.png" alt="スマートフォン版へ" class="imgover" /></a></p>
+<header class="Header_Area fc">
+<div class="Header_Inner fc">
+<h1>
+<a href="https://www.netkeiba.com/?rf=logo" title="netkeiba.com">
+<img src="https://cdn.netkeiba.com/img.www/style/netkeiba.ja/image/common/netkeiba_logo02.png?20231003" alt="netkeiba.com">
+</a>
+</h1>
+<div class="DB_Search_Input">
+<form class="Search_Box" action="https://www.netkeiba.com/" method="POST">
+<input type="hidden" name="pid" value="search">
+<input type="hidden" name="type" value="db">
+<div class="InputTxt_Form_Box">
+<input class="Txt_Form" placeholder="馬名で検索" value="" type="text" name="word" id="keywords">
+</div><!-- / .InputTxt_Form -->
+<div class="Submit_Btn_Box">
+<svg xmlns="http://www.w3.org/2000/svg" width="41.05" height="41.05" viewBox="0 0 41.05 41.05" class="IconInput01">
+<g id="icon_search" transform="translate(-234.6 -459.7)">
+<circle cx="15.6" cy="15.6" r="15.6" transform="translate(236.1 461.2)" class="st0"/>
+<g>
+<path d="M275.2,498.2a1.335,1.335,0,0,1,0,2l-.1.1a1.335,1.335,0,0,1-2,0l-11.2-11.2a1.335,1.335,0,0,1,0-2l.1-.1a1.335,1.335,0,0,1,2,0Z" class="st1"/>
+</g>
+</g>
+</svg>
+<input class="Submit_Btn" type="submit" name="submit" value="検 索">
+</div><!-- / .Submit_Btn_Box -->
+</form>
+</div><!-- / .DB_Search_Input -->
+<div class="MyMenuWrap">
+<ul class="UserMyMenu fc">
+
+<li>
+<a href="https://regist.netkeiba.com/?pid=premium&rf=header">
+<span>プレミアムサービス</span>
+</a>
+</li>
+<li>
+<a href="https://race.netkeiba.com/bookmark/bookmark.html?rf=navi" class="Icon_Header Icon_MyfavHorse">
+<span>お気に入り馬</span>
+</a>
+</li>
+<li>
+<a href="https://regist.netkeiba.com/account/?pid=login" class="Icon_Header Icon_Login">
+<span>ログイン/会員登録</span>
+</a>
+</li>
+<li class="disp_none header_stage_area no_login_show">
+<a href="https://regist.netkeiba.com/?pid=stage_login&action=login&return_url=https://regist.netkeiba.com/">
+<span>(s)ログイン</span>
+</a>
+</li>
+<li class="disp_none header_stage_area no_login_show">
+<a href="https://regist.netkeiba.com/?pid=user_add_form&payment=nk_user&goods_cd=310409&opt=init">
+<span>(s)無料会員登録</span>
+</a>
+<li class="disp_none header_stage_area login_show">
+<a href="https://regist.netkeiba.com/?pid=stage_login&action=logout&return_url=https://regist.netkeiba.com/">
+<span>(s)ログアウト</span>
+</a>
+</li>
+</ul>
+<div class="SiteToggleBtn01 Keirin">
+<a href="https://keirin.netkeiba.com/?rf=nk_pc_header">
+
+<img src="https://cdn.netkeiba.com/img.www/style/netkeiba.ja/image/common/icon_keirin01.png" alt="" width="21" height="16" class="KeirinLogoMark01">競輪
+</a>
+</div><!-- /.SiteToggleBtn01 -->
+</div>
+</div><!-- /.Header_Inner -->
+</header>
+<nav class="ContentNavi01">
+<ul class="fc">
+<li class="Top">
+<a href="https://www.netkeiba.com/?rf=navi" title="トップ" id="navi_link_top">トップ</a>
+</li>
+<li class="News">
+<a href="https://news.netkeiba.com/?rf=navi" title="ニュース" id="navi_link_news">ニュース</a>
+</li>
+<li class="Race">
+<a href="https://race.netkeiba.com/top/?rf=navi" title="レース" id="navi_link_race">レース</a>
+</li>
+<li class="Yoso">
+<a href="https://yoso.netkeiba.com/?access=init&rf=navi" title="予想" id="navi_link_yoso">予想</a>
+</li>
+<li class="Column">
+<a href="https://news.netkeiba.com/?pid=column_top&rf=navi" title="コラム" id="navi_link_column">コラム</a>
+</li>
+<!-- <li class="Shop New">
+<a href="https://shop.netkeiba.com/?rf=navi" title="ショップ" id="navi_link_shop">ショップ</a>
+</li> -->
+<li class="Tv">
+<a href="https://tv.netkeiba.com/?rf=navi" title="netkeibaTV" id="navi_link_tv">netkeibaTV</a>
+</li>
+<li class="Local">
+<a href="https://nar.netkeiba.com/top/?rf=navi" title="地方競馬" id="navi_link_nar">地方競馬</a>
+</li>
+<li class="Db">
+<a href="https://db.netkeiba.com/?rf=navi" title="データベース" id="navi_link_db">データベース</a>
+</li>
+<li class="Paper">
+<a href="https://yoso.netkeiba.com/senmonshi/?rf=navi" title="競馬新聞" id="navi_link_senmonshi">競馬新聞</a>
+</li>
+<li class="YosoCS">
+<a href="https://orepro.netkeiba.com/?rf=navi" title="俺プロ" id="navi_link_orepro">俺プロ</a>
+</li>
+<li class="Owner">
+<a href="https://owner.netkeiba.com/?rf=navi" title="一口馬主" id="navi_link_owner">一口馬主</a>
+</li>
+<li class="Pog">
+<a href="https://pog.netkeiba.com/?rf=navi" title="POG" id="navi_link_pog">POG</a>
+</li>
+<li class="Matome">
+<a href="https://dir.netkeiba.com/keibamatome/index.html?rf=navi" title="まとめ" id="navi_link_keibamatome">まとめ</a>
+</li>
+</ul>
+</nav><!-- /.ContentNavi01 -->
+<!-- Geniee Wrapper Head Tag -->
+<script>
+window.gnshbrequest = window.gnshbrequest || {cmd:[]};
+gnshbrequest.cmd.push(function(){
+gnshbrequest.registerPassback("1491447");
+gnshbrequest.registerPassback("1491448");
+gnshbrequest.registerPassback("1492793");
+gnshbrequest.registerPassback("1491462");
+gnshbrequest.forceInternalRequest();
+});
+</script>
+<script async src="https://cpt.geniee.jp/hb/v1/211239/47/wrapper.min.js"></script>
+<!-- /Geniee Wrapper Head Tag -->
+<script async src="https://cdn.netkeiba.com/img.racev4.sp/common/js/nd_util.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+show_user();
+});
+function show_user(){
+var is_stage = '';
+var is_user  = '';
+var is_alert = '';
+var is_sp    = '';
+var nickname = '';
+var user_img = '';
+if(is_sp) {
+$('.sp_nk_btn').show();
+}
+if(! is_stage) {
+$('.header_stage_area').remove();
+}
+if(is_user){
+//ログイン中
+$('.login_show').show();
+if(is_alert) {
+$('.Alert_New').show();
+}
+} else {
+//未ログイン
+$('.no_login_show').show();
+$('.login_show').remove();
+}
+}
+</script>
+
+<div class="genre_menu fc">
+<ul>
+<li ><a href="/" title="競馬データTOP">競馬データTOP</a></li>
+<li class="active"><a href="/?pid=horse_top" title="競走馬">競走馬</a></li>
+<li ><a href="/?pid=jockey_top" title="騎手">騎手</a></li>
+<li ><a href="/?pid=trainer_top" title="調教師">調教師</a></li>
+<li ><a href="/?pid=owner_top" title="馬主">馬主</a></li>
+<li ><a href="/?pid=breeder_top" title="生産者">生産者</a></li>
+<li ><a href="/?pid=race_top" title="レース">レース</a></li>
+<li ><a href="/?pid=classic_index" title="クラシック">クラシック</a></li>
+</ul>
+</div><!-- /.genre_menu -->
+<div id="contents">
+<div id="db_main_box" class="fc">
+<div class="db_head fc">
+<div class="db_head_name fc">
+
+<div class="horse_title">
+<h1>フォーラウェイ</h1>
+<p class="eng_name">
+<a href="https://en.netkeiba.com/db/horse/2013104780/" style="color:#FFF;">Fallaway</a>
+</p>
+<p class="rate" style="display:none">
+<img src="https://cdn.netkeiba.com/img.db//style/netkeiba.ja/image/db_icon_star_01.png" alt="" /><img src="https://cdn.netkeiba.com/img.db//style/netkeiba.ja/image/db_icon_star_01.png" alt="" /><img src="https://cdn.netkeiba.com/img.db//style/netkeiba.ja/image/db_icon_star_harf_01.png" alt="" /><img src="https://cdn.netkeiba.com/img.db//style/netkeiba.ja/image/db_icon_star_no_01.png" alt="" /><img src="https://cdn.netkeiba.com/img.db//style/netkeiba.ja/image/db_icon_star_no_01.png" alt="" /><strong>2.50<!-- （<span></span>票）--></strong>
+</p>
+<p class="txt_01">抹消　牡　鹿毛 </p>
+</div><!-- /.horse_title" -->
+
+<div class="HorseRegist_BtnBox fc">
+<!-- social api_community_show_horse_bookmark_link -->
+<div class="ShereBtn"><a href=""><img src="https://cdn.netkeiba.com/img.db/style/netkeiba.ja/image/db_head_btn_bg_01_shere.png" alt="" />共有</a></div>
+<span id="HorseBookmarkLink"></span>
+<script type="text/javascript">
+$( document ).ready( function() {
+showHorseBookmarkLink( 'HorseBookmarkLink', '2013104780' );
+} );
+</script>
+
+</div><!-- /.HorseRegist_BtnBox -->
+<div class="SherePopup01">
+<span class="PopupTitle01">シェアする</span>
+<span class="SherePopupCloseBtn"></span>
+<ul class="ShereMenuList">
+<li>
+<a href="https://twitter.com/share?text=_share_title_&amp;url=_share_url_" rel="nofollow" target="_blank" class="Sns_Btn" id="sns_twitter">
+<span class="ShereIcon TwIcon"></span>
+<span>X</span>
+</a>
+</li>
+<li>
+<a href="https://www.facebook.com/sharer/sharer.php?u=_share_url_" target="_blank" class="Sns_Btn" id="sns_facebook">
+<span class="ShereIcon FbIcon"></span>
+<span>Facebook</span>
+</a>
+</li>
+<li>
+<a href="https://social-plugins.line.me/lineit/share?url=_share_url_&amp;text=_share_title_" target="_blank" class="Sns_Btn" id="sns_line">
+<span class="ShereIcon LineIcon"></span>
+<span>LINE</span>
+</a>
+</li>
+<li>
+<a href="javascript:void(0);" onclick="clipURL();" class="Sns_Btn">
+<span class="ShereIcon CopyIcon"></span>
+<span>URLをコピー</span>
+</a>
+</li>
+</ul>
+<script>
+function clipURL() {
+$('body').append('<textarea id="currentURL" style="position:fixed;left:-100%;">'+location.href+'</textarea>');
+$('#currentURL').select();
+document.execCommand('copy');
+$('#currentURL').remove();
+swal("URLをコピーしました。");
+}
+</script>
+</div>
+<link rel="stylesheet" href="https://cdn.netkeiba.com/img.db/common/css/sweetalert_custom.css" type="text/css" media="screen">
+<script src="https://cdn.netkeiba.com/img.db/common/js/sweetalert.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/encoding-japanese/2.0.0/encoding.min.js"></script>
+<script>
+$(function(){
+var share_title = '';
+var page_title = document.title;
+if(page_title){
+var ary_title = page_title.split('').map((v) => v.charCodeAt());
+var encode_title = Encoding.convert(ary_title, 'UTF8', 'UNICODE');
+share_title = Encoding.urlEncode(encode_title);
+}
+$("[id^='sns_']").click(function(){
+var replace_url = '';
+var cur_url = encodeURIComponent('https://db.netkeiba.com'+location.pathname+location.search+'&rf=share');
+replace_url = $(this).attr('href').replace('_share_title_', share_title).replace('_share_url_', cur_url);
+$(this).attr("href", replace_url);
+});
+// 共有ポップアップ
+var current_scrollY;
+$(".ShereBtn a").on("click", function(){
+var msg = '';
+var url = '';
+if (typeof window.plugins === 'object') {
+window.plugins.socialsharing.shareWithOptions({
+message: msg,
+url: url
+});
+return false;
+}
+current_scrollY = $(window).scrollTop();
+$(".SherePopup01").addClass("OpenDraw");
+$("#page").addClass("ViewOut");
+$("#page.ViewOut").css({
+top: -1 * current_scrollY,
+height:'auto'
+});
+$("#page").append("<div class='ModalOverlay'></div>");
+return false;
+});
+// 閉じる
+$(document).on("touchend click", ".SherePopupCloseBtn,.ModalOverlay", function(){
+$(".SherePopup01").removeClass("OpenDraw");
+$("#page.ViewOut").attr({ style: ''}).removeClass("ViewOut");
+$(".ModalOverlay").remove();
+$('body').css({'position':'static'});
+$( 'html, body' ).prop( { scrollTop: current_scrollY } );
+return false;
+event.preventDefault();
+});
+});
+</script>
+</div><!-- /.db_head_name -->
+
+<div class="db_head_regist fc">
+<ul class="db_detail_menu">
+<li>
+</li>
+<li>
+<a href="/horse/2013104780/" title="フォーラウェイのプロフィールTOP" >TOP</a>
+</li>
+<li>
+<a href="/horse/result/2013104780/" title="フォーラウェイの戦績" >戦績</a>
+</li>
+<li>
+<a href="/horse/ped/2013104780/" title="フォーラウェイの血統"  class="active" >血統</a>
+</li>
+
+<li>
+<a href="/?pid=horse_board&id=2013104780" title="フォーラウェイの掲示板" >掲示板</a>
+</li>
+<li>
+<a href="https://db.netkeiba.com/?pid=horse_photo&id=2013104780" title="フォーラウェイの写真" >写真</a>
+</li>
+<li>
+<a href="/?pid=horse_training&id=2013104780" title="フォーラウェイの調教" ><img src="https://cdn.netkeiba.com/img.db//style/netkeiba.ja/image/icon_premium_01.png" alt="" class="png_img" />調教</a>
+</li>
+<li>
+<a href="/?pid=horse_race_comment&id=2013104780" title="フォーラウェイのレース後短評" ><img src="https://cdn.netkeiba.com/img.db//style/netkeiba.ja/image/icon_premium_01.png" alt="" class="png_img" />短評</a>
+</li>
+<li>
+<a href="/?pid=horse_kyusya_comment&id=2013104780" title="フォーラウェイの厩舎コメント" ><img src="https://cdn.netkeiba.com/img.db//style/netkeiba.ja/image/icon_premium_01.png" alt="" class="png_img" />コメント</a>
+</li>
+<li>
+<a href="/?pid=horse_paddock_movie&id=2013104780" title="フォーラウェイのパドック映像" ><img src="https://cdn.netkeiba.com/img.db//style/netkeiba.ja/image/icon_premium_01.png" alt="" class="png_img" />パドック映像</a>
+</li>
+<li>
+<a href="/?pid=horse_photo_paddock&id=2013104780" title="フォーラウェイのフォトパドック" ><img src="https://cdn.netkeiba.com/img.db//style/netkeiba.ja/image/icon_premium_01.png" alt="" class="png_img" />フォトパドック</a>
+</li>
+<li>
+<a href="https://db.netkeiba.com/v1.1/?pid=horse_reviewer_list&id=2013104780" title="フォーラウェイのみんなの評価" >みんなの評価</a>
+</li>
+<li>
+<a href="https://db.netkeiba.com/community/?pid=horse_info_next&id=2013104780" title="フォーラウェイの次走・近況情報" >近況</a>
+</li>
+
+
+</ul>
+</div><!-- /.db_head_regist -->
+</div><!-- /.db_head -->
+</div><!-- / #db_main_box -->
+<div class="db_main_deta mb30">
+
+<div class="cate_bar">
+<h2>5代血統表</h2>
+</div>
+<diary_snap>
+<table cellpadding="0" cellspacing="1" summary="5代血統表" class="blood_table detail">
+<tr>
+<td width="20%" rowspan="16" class="b_ml">
+<a href="/horse/2001103890/">スズカマンボ
+
+</a>
+<br />2001 鹿毛
+<br />[<a href="/horse/ped/2001103890/">血統</a>][<a href="/horse/sire/2001103890/">産駒</a>]
+<br />Halo系
+</td>
+<td width="20%" rowspan="8" class="b_ml">
+<a href="/horse/000a00033a/">サンデーサイレンス
+<br />Sunday Silence(米)
+</a>
+<br />1986 青鹿毛
+<br />[<a href="/horse/ped/000a00033a/">血統</a>][<a href="/horse/sire/000a00033a/">産駒</a>]
+</td>
+<td width="20%" rowspan="4" class="b_ml">
+<a href="/horse/000a0012bf/">Halo
+
+</a>
+<br />1969 黒鹿毛
+<br />[<a href="/horse/ped/000a0012bf/">血統</a>][<a href="/horse/sire/000a0012bf/">産駒</a>]
+</td>
+<td width="20%" rowspan="2" class="b_ml">
+<a href="/horse/000a000f2b/">Hail to Reason</a>
+<br />1958 黒鹿毛
+</td>
+<td width="20%" height="20" class="b_ml">
+<a href="/horse/000a001042/">Turn-to</a>
+</td>
+</tr>
+<tr>
+<td height="20" class="b_fml">
+<a href="/horse/000a0078a6/">Nothirdchance</a>
+</td>
+</tr>
+<tr>
+<td rowspan="2" class="b_fml">
+<a href="/horse/000a007459/">Cosmah</a>
+<br />1953 鹿毛
+</td>
+<td height="20" class="b_ml">
+<a href="/horse/000a0013f0/">Cosmic Bomb</a>
+</td>
+</tr>
+<tr>
+<td height="20" class="b_fml">
+<a href="/horse/000a0072a0/">Almahmoud</a>
+</td>
+</tr>
+<tr>
+<td rowspan="4" class="b_fml">
+<a href="/horse/000a008c1e/">Wishing Well
+
+</a>
+<br />1975 鹿毛
+<br />[<a href="/horse/ped/000a008c1e/">血統</a>][<a href="/horse/mare/000a008c1e">産駒</a>]
+</td>
+<td rowspan="2" class="b_ml">
+<a href="/horse/000a0019b6/">Understanding</a>
+<br />1963 栗毛
+</td>
+<td height="20" class="b_ml">
+<a href="/horse/000a000e20/">Promised Land</a>
+</td>
+</tr>
+<tr>
+<td height="20" class="b_fml">
+<a href="/horse/000a006c87/">Pretty Ways</a>
+</td>
+</tr>
+<tr>
+<td rowspan="2" class="b_fml">
+<a href="/horse/000a008c1d/">Mountain Flower</a>
+<br />1964 鹿毛
+</td>
+<td height="20" class="b_ml">
+<a href="/horse/000a0019ba/">Montparnasse</a>
+</td>
+</tr>
+<tr>
+<td height="20" class="b_fml">
+<a href="/horse/000a008c1c/">Edelweiss</a>
+</td>
+</tr>
+<tr>
+<td rowspan="8" class="b_fml">
+<a href="/horse/1995108978/">スプリングマンボ
+
+</a>
+<br />1995 鹿毛
+<br />[<a href="/horse/ped/1995108978/">血統</a>][<a href="/horse/mare/1995108978/">産駒</a>]
+</td>
+<td rowspan="4" class="b_ml">
+<a href="/horse/000a001d7e/">Kingmambo
+<br />(米)
+</a>
+<br />1990 鹿毛
+<br />[<a href="/horse/ped/000a001d7e/">血統</a>][<a href="/horse/sire/000a001d7e/">産駒</a>]
+</td>
+<td rowspan="2" class="b_ml">
+<a href="/horse/000a001607/">Mr. Prospector</a>
+<br />1970 鹿毛
+</td>
+<td height="20" class="b_ml">
+<a href="/horse/000a000e46/">Raise a Native</a>
+</td>
+</tr>
+<tr>
+<td height="20" class="b_fml">
+<a href="/horse/000a007e0c/">Gold Digger</a>
+</td>
+</tr>
+<tr>
+<td rowspan="2" class="b_fml">
+<a href="/horse/000a009961/">Miesque</a>
+<br />1984 鹿毛
+</td>
+<td height="20" class="b_ml">
+<a href="/horse/000a001676/">Nureyev</a>
+</td>
+</tr>
+<tr>
+<td height="20" class="b_fml">
+<a href="/horse/000a0084c9/">Pasadoble</a>
+</td>
+</tr>
+<tr>
+<td rowspan="4" class="b_fml">
+<a href="/horse/000a0001b6/">キーフライヤー
+<br />Key Flyer(米)
+</a>
+<br />1986 鹿毛
+<br />[<a href="/horse/ped/000a0001b6/">血統</a>][<a href="/horse/mare/000a0001b6/">産駒</a>]
+</td>
+<td rowspan="2" class="b_ml">
+<a href="/horse/000a000dfe/"><span class="red">Nijinsky</span></a>
+<br />1967 鹿毛
+</td>
+<td height="20" class="b_ml">
+<a href="/horse/000a000e04/">Northern Dancer</a>
+</td>
+</tr>
+<tr>
+<td height="20" class="b_fml">
+<a href="/horse/000a00759a/">Flaming Page</a>
+</td>
+</tr>
+<tr>
+<td rowspan="2" class="b_fml">
+<a href="/horse/000a008e25/">Key Partner</a>
+<br />1976 黒鹿毛
+</td>
+<td height="20" class="b_ml">
+<a href="/horse/000a0010f9/">Key to the Mint</a>
+</td>
+</tr>
+<tr>
+<td height="20" class="b_fml">
+<a href="/horse/000a008948/">Native Partner</a>
+</td>
+</tr>
+<tr>
+<td width="20%" rowspan="16" class="b_fml">
+<a href="/horse/1998104934/">ダイヤモンドクイン
+
+</a>
+<br />1998 鹿毛
+<br />[<a href="/horse/ped/1998104934/">血統</a>][<a href="/horse/mare/1998104934/">産駒</a>]
+<br />FNo.[7-e]
+</td>
+<td width="20%" rowspan="8" class="b_ml">
+<a href="/horse/000a0001d4/">ラムタラ
+<br />Lammtarra(米)
+</a>
+<br />1992 栗毛
+<br />[<a href="/horse/ped/000a0001d4/">血統</a>][<a href="/horse/sire/000a0001d4/">産駒</a>]
+</td>
+<td width="20%" rowspan="4" class="b_ml">
+<a href="/horse/000a000dfe/"><span class="red">Nijinsky</span>
+
+</a>
+<br />1967 鹿毛
+<br />[<a href="/horse/ped/000a000dfe/">血統</a>][<a href="/horse/sire/000a000dfe/">産駒</a>]
+</td>
+<td width="20%" rowspan="2" class="b_ml">
+<a href="/horse/000a000e04/">Northern Dancer</a>
+<br />1961 鹿毛
+</td>
+<td width="20%" height="20" class="b_ml">
+<a href="/horse/000a000f8c/">Nearctic</a>
+</td>
+</tr>
+<tr>
+<td height="20" class="b_fml">
+<a href="/horse/000a00702e/">Natalma</a>
+</td>
+</tr>
+<tr>
+<td rowspan="2" class="b_fml">
+<a href="/horse/000a00759a/">Flaming Page</a>
+<br />1959 鹿毛
+</td>
+<td height="20" class="b_ml">
+<a href="/horse/000a0013d9/">Bull Page</a>
+</td>
+</tr>
+<tr>
+<td height="20" class="b_fml">
+<a href="/horse/000a00759e/">Flaring Top</a>
+</td>
+</tr>
+<tr>
+<td rowspan="4" class="b_fml">
+<a href="/horse/000a009fb8/">Snow Bride
+
+</a>
+<br />1986 栗毛
+<br />[<a href="/horse/ped/000a009fb8/">血統</a>][<a href="/horse/mare/000a009fb8/">産駒</a>]
+</td>
+<td rowspan="2" class="b_ml">
+<a href="/horse/000a001340/">Blushing Groom</a>
+<br />1974 栗毛
+</td>
+<td height="20" class="b_ml">
+<a href="/horse/000a000e48/">Red God</a>
+</td>
+</tr>
+<tr>
+<td height="20" class="b_fml">
+<a href="/horse/000a0079de/">Runaway Bride</a>
+</td>
+</tr>
+<tr>
+<td rowspan="2" class="b_fml">
+<a href="/horse/1979109003/">Awaasif</a>
+<br />1979 鹿毛
+</td>
+<td height="20" class="b_ml">
+<a href="/horse/000a001358/">Snow Knight</a>
+</td>
+</tr>
+<tr>
+<td height="20" class="b_fml">
+<a href="/horse/000a007237/">Royal Statute</a>
+</td>
+</tr>
+<tr>
+<td rowspan="8" class="b_fml">
+<a href="/horse/1977104003/">ハギノトップレディ
+
+</a>
+<br />1977 黒鹿毛
+<br />[<a href="/horse/ped/1977104003/">血統</a>][<a href="/horse/mare/1977104003/">産駒</a>]
+</td>
+<td rowspan="4" class="b_ml">
+<a href="/horse/000a000b3b/">サンシー
+
+</a>
+<br />1969 黒鹿毛
+<br />[<a href="/horse/ped/000a000b3b/">血統</a>][<a href="/horse/sire/000a000b3b/">産駒</a>]
+</td>
+<td rowspan="2" class="b_ml">
+<a href="/horse/000a000ff4/">Sanctus</a>
+<br />1960 黒鹿毛
+</td>
+<td height="20" class="b_ml">
+<a href="/horse/000a000f0a/">Fine Top</a>
+</td>
+</tr>
+<tr>
+<td height="20" class="b_fml">
+<a href="/horse/000a0079f3/">Sanelta</a>
+</td>
+</tr>
+<tr>
+<td rowspan="2" class="b_fml">
+<a href="/horse/000a007bf6/">Wordys</a>
+<br />1957 栗毛
+</td>
+<td height="20" class="b_ml">
+<a href="/horse/000a000e4d/">Worden</a>
+</td>
+</tr>
+<tr>
+<td height="20" class="b_fml">
+<a href="/horse/000a007953/">Princesse d'Ys</a>
+</td>
+</tr>
+<tr>
+<td rowspan="4" class="b_fml">
+<a href="/horse/1955104020/">イツトー
+
+</a>
+<br />1971 黒鹿毛
+<br />[<a href="/horse/ped/1955104020/">血統</a>][<a href="/horse/mare/1955104020/">産駒</a>]
+</td>
+<td rowspan="2" class="b_ml">
+<a href="/horse/000a0004e7/">ヴェンチア</a>
+<br />1957 黒鹿毛
+</td>
+<td height="20" class="b_ml">
+<a href="/horse/000a000e49/">Relic</a>
+</td>
+</tr>
+<tr>
+<td height="20" class="b_fml">
+<a href="/horse/000a0004af/">Rose O'Lynn</a>
+</td>
+</tr>
+<tr>
+<td rowspan="2" class="b_fml">
+<a href="/horse/1955100755/">ミスマルミチ</a>
+<br />1965 鹿毛
+</td>
+<td height="20" class="b_ml">
+<a href="/horse/000a0009ef/">ネヴァービート</a>
+</td>
+</tr>
+<tr>
+<td height="20" class="b_fml">
+<a href="/horse/000a003024/">キユーピツト</a>
+</td>
+</tr>
+</table>
+<diary_snap_cut>
+<div class="blood_cross">
+<form action="/" method="post">
+<input type="hidden" name="pid" value="horse_list" />
+<input type="hidden" name="ped" value="1" />
+<input type="hidden" name="FMMF" value="Nijinsky" /><input type="hidden" name="MFF" value="Nijinsky" />
+<h3>5代目までに生じたクロス　<input type="submit" value="同配合検索(4代目まで)" class="button" /></h3>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td><span style="color:#f00;">Nijinsky</span></td>
+<td align="right">18.75%</td>
+<td>4 x 3</td>
+</tr>
+</table>
+</form>
+
+</div><!-- /.blood_cross -->
+</diary_snap_cut>
+</diary_snap>
+<div class="diary_snap_write_box">
+<p><a href="https://db.netkeiba.com/?pid=diary_snapshot&snap=aHR0cDovL2RiLm5ldGtlaWJhLmNvbS8/cGlkPWhvcnNlX3BlZGlncmVlJmlkPTIwMTMxMDQ3ODA=&meta=horse_pedigree" title="ひとこと日記を書く"><img src="https://cdn.netkeiba.com/img.db//style/netkeiba.ja/image/prof_btn_diary_write_01.png" class="imgover" /></a></p>
+<p>※この馬の血統について、日記を書くことができます。</p>
+</div><!-- /.diary_snap_write_box -->
+<div class="relative_info fc">
+<div class="cate_bar_s">
+<h2>兄弟・近親</h2>
+</div><!-- /.cate_bar_s -->
+
+<div class="brother">
+<table cellpadding="0" cellspacing="1" summary="兄弟馬" class="nk_tb_common race_table_01">
+<caption>兄弟</caption>
+<tr>
+<th>馬名</th>
+<th>性</th>
+<th>生年</th>
+<th>&nbsp;</th>
+</tr>
+<tr>
+<td class="txt_l"><a href="/horse/2012103474/" title="サトノハーデス">サトノハーデス</a></td>
+<td>牡</td>
+<td><a href="/?pid=horse_list&birthyear=2012">2012</a></td>
+<td class="txt_l">
+<a href="/horse/ped/2012103474/">[血]</a>
+
+<a href="/horse/bbs/2012103474/">[掲]</a>
+<a href="/horse/pic/2012103474/">[写]</a>
+
+
+</td>
+</tr><tr>
+<td class="txt_l"><a href="/horse/2011102532/" title="アルテ">アルテ</a></td>
+<td>牡</td>
+<td><a href="/?pid=horse_list&birthyear=2011">2011</a></td>
+<td class="txt_l">
+<a href="/horse/ped/2011102532/">[血]</a>
+
+<a href="/horse/bbs/2011102532/">[掲]</a>
+<a href="/horse/pic/2011102532/">[写]</a>
+
+
+</td>
+</tr><tr>
+<td class="txt_l"><a href="/horse/2010103261/" title="オーキッドキャリー">オーキッドキャリー</a></td>
+<td>牝</td>
+<td><a href="/?pid=horse_list&birthyear=2010">2010</a></td>
+<td class="txt_l">
+<a href="/horse/ped/2010103261/">[血]</a>
+
+<a href="/horse/bbs/2010103261/">[掲]</a>
+<a href="/horse/pic/2010103261/">[写]</a>
+
+
+</td>
+</tr><tr>
+<td class="txt_l"><a href="/horse/2009104148/" title="ダークブレイズ">ダークブレイズ</a></td>
+<td>牡</td>
+<td><a href="/?pid=horse_list&birthyear=2009">2009</a></td>
+<td class="txt_l">
+<a href="/horse/ped/2009104148/">[血]</a>
+
+<a href="/horse/bbs/2009104148/">[掲]</a>
+<a href="/horse/pic/2009104148/">[写]</a>
+
+
+</td>
+</tr><tr>
+<td class="txt_l"><a href="/horse/2008100867/" title="ダイヤモンドギフト">ダイヤモンドギフト</a></td>
+<td>牝</td>
+<td><a href="/?pid=horse_list&birthyear=2008">2008</a></td>
+<td class="txt_l">
+<a href="/horse/ped/2008100867/">[血]</a>
+<a href="/horse/mare/2008100867/">[繁]</a>
+<a href="/horse/bbs/2008100867/">[掲]</a>
+<a href="/horse/pic/2008100867/">[写]</a>
+
+
+</td>
+</tr><tr>
+<td class="txt_l"><a href="/horse/2007100848/" title="メイキングドリーム">メイキングドリーム</a></td>
+<td>牡</td>
+<td><a href="/?pid=horse_list&birthyear=2007">2007</a></td>
+<td class="txt_l">
+<a href="/horse/ped/2007100848/">[血]</a>
+
+<a href="/horse/bbs/2007100848/">[掲]</a>
+<a href="/horse/pic/2007100848/">[写]</a>
+
+
+</td>
+</tr><tr>
+<td class="txt_l"><a href="/horse/2006101513/" title="ブリリン">ブリリン</a></td>
+<td>牝</td>
+<td><a href="/?pid=horse_list&birthyear=2006">2006</a></td>
+<td class="txt_l">
+<a href="/horse/ped/2006101513/">[血]</a>
+<a href="/horse/mare/2006101513/">[繁]</a>
+<a href="/horse/bbs/2006101513/">[掲]</a>
+<a href="/horse/pic/2006101513/">[写]</a>
+
+
+</td>
+</tr><tr>
+<td class="txt_l"><a href="/horse/2005100912/" title="ラブユーイチフジ">ラブユーイチフジ</a></td>
+<td>牡</td>
+<td><a href="/?pid=horse_list&birthyear=2005">2005</a></td>
+<td class="txt_l">
+<a href="/horse/ped/2005100912/">[血]</a>
+
+<a href="/horse/bbs/2005100912/">[掲]</a>
+<a href="/horse/pic/2005100912/">[写]</a>
+
+
+</td>
+</tr>
+</table>
+
+</div><!-- / .brother -->
+
+<div class="uncle">
+<table cellpadding="0" cellspacing="1" summary="叔父母" class="nk_tb_common race_table_01">
+<caption>叔父母</caption>
+<tr>
+<th>馬名</th>
+<th>性</th>
+<th>生年</th>
+<th>&nbsp;</th>
+</tr>
+<tr>
+<td class="txt_l"><a href="/horse/1993106775/" title="フジノキャラット">フジノキャラット</a></td>
+<td>牝</td>
+<td><a href="/?pid=horse_list&birthyear=1993">1993</a></td>
+<td class="txt_l">
+<a href="/horse/ped/1993106775/">[血]</a>
+<a href="/horse/mare/1993106775/">[繁]</a>
+<a href="/horse/bbs/1993106775/">[掲]</a>
+<a href="/horse/pic/1993106775/">[写]</a>
+
+
+</td>
+</tr><tr>
+<td class="txt_l"><a href="/horse/1991101449/" title="フジノスイショウ">フジノスイショウ</a></td>
+<td>牝</td>
+<td><a href="/?pid=horse_list&birthyear=1991">1991</a></td>
+<td class="txt_l">
+<a href="/horse/ped/1991101449/">[血]</a>
+<a href="/horse/mare/1991101449/">[繁]</a>
+<a href="/horse/bbs/1991101449/">[掲]</a>
+<a href="/horse/pic/1991101449/">[写]</a>
+
+
+</td>
+</tr><tr>
+<td class="txt_l"><a href="/horse/1990100666/" title="マキバノレディ">マキバノレディ</a></td>
+<td>牝</td>
+<td><a href="/?pid=horse_list&birthyear=1990">1990</a></td>
+<td class="txt_l">
+<a href="/horse/ped/1990100666/">[血]</a>
+<a href="/horse/mare/1990100666/">[繁]</a>
+<a href="/horse/bbs/1990100666/">[掲]</a>
+<a href="/horse/pic/1990100666/">[写]</a>
+
+
+</td>
+</tr><tr>
+<td class="txt_l"><a href="/horse/1989100591/" title="ウメノアスコット">ウメノアスコット</a></td>
+<td>牝</td>
+<td><a href="/?pid=horse_list&birthyear=1989">1989</a></td>
+<td class="txt_l">
+<a href="/horse/ped/1989100591/">[血]</a>
+<a href="/horse/mare/1989100591/">[繁]</a>
+<a href="/horse/bbs/1989100591/">[掲]</a>
+<a href="/horse/pic/1989100591/">[写]</a>
+
+
+</td>
+</tr><tr>
+<td class="txt_l"><a href="/horse/1988107615/" title="ドリームドリーム">ドリームドリーム</a></td>
+<td>牝</td>
+<td><a href="/?pid=horse_list&birthyear=1988">1988</a></td>
+<td class="txt_l">
+<a href="/horse/ped/1988107615/">[血]</a>
+<a href="/horse/mare/1988107615/">[繁]</a>
+<a href="/horse/bbs/1988107615/">[掲]</a>
+<a href="/horse/pic/1988107615/">[写]</a>
+
+
+</td>
+</tr><tr>
+<td class="txt_l"><a href="/horse/1987100260/" title="ダイイチルビー">ダイイチルビー</a></td>
+<td>牝</td>
+<td><a href="/?pid=horse_list&birthyear=1987">1987</a></td>
+<td class="txt_l">
+<a href="/horse/ped/1987100260/">[血]</a>
+<a href="/horse/mare/1987100260/">[繁]</a>
+<a href="/horse/bbs/1987100260/">[掲]</a>
+<a href="/horse/pic/1987100260/">[写]</a>
+
+
+</td>
+</tr><tr>
+<td class="txt_l"><a href="/horse/1986100348/" title="ドリームボーイ">ドリームボーイ</a></td>
+<td>牡</td>
+<td><a href="/?pid=horse_list&birthyear=1986">1986</a></td>
+<td class="txt_l">
+<a href="/horse/ped/1986100348/">[血]</a>
+
+<a href="/horse/bbs/1986100348/">[掲]</a>
+<a href="/horse/pic/1986100348/">[写]</a>
+
+
+</td>
+</tr><tr>
+<td class="txt_l"><a href="/horse/1985103741/" title="チユニカレディ">チユニカレディ</a></td>
+<td>牝</td>
+<td><a href="/?pid=horse_list&birthyear=1985">1985</a></td>
+<td class="txt_l">
+<a href="/horse/ped/1985103741/">[血]</a>
+<a href="/horse/mare/1985103741/">[繁]</a>
+<a href="/horse/bbs/1985103741/">[掲]</a>
+<a href="/horse/pic/1985103741/">[写]</a>
+
+
+</td>
+</tr><tr>
+<td class="txt_l"><a href="/horse/1983106912/" title="ハギノトップレディの1983">ハギノトップレディの1983</a></td>
+<td>牝</td>
+<td><a href="/?pid=horse_list&birthyear=1983">1983</a></td>
+<td class="txt_l">
+<a href="/horse/ped/1983106912/">[血]</a>
+
+<a href="/horse/bbs/1983106912/">[掲]</a>
+<a href="/horse/pic/1983106912/">[写]</a>
+
+
+</td>
+</tr>
+</table>
+
+</div><!-- /.uncle -->
+</div><!-- / .relative_info -->
+<div class="mare_line">
+<div class="cate_bar_s">
+<h2>牝系図<span style="margin-left:2px;">(各馬の血統に移動します)</span></h2>
+</div><!-- /.cate_bar_s -->
+
+<div class="mare_line_box">
+<tt></tt>
+
+<a href="/horse/ped/1977104003/"><span class="pink">ハギノトップレディ</span></a>
+
+(牝
+1977
+黒鹿毛
+<a href="/horse/sire/000a000b3b/">サンシー</a>)
+2勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</tt><nobr>1着&nbsp;-&nbsp;桜花賞(G)、エリザベス女王杯(G)、桜花賞(OP)、エリザベス女王杯(OP)</nobr>
+<br /><tt>&nbsp;|--</tt>
+
+<a href="/horse/ped/1983106912/"><span class="pink">ハギノトップレディの1983</span></a>
+
+(牝
+1983
+黒鹿毛
+<a href="/horse/sire/000a0003bb/">グランディ</a>)
+
+
+<br />
+<tt>&nbsp;|--</tt>
+
+<a href="/horse/ped/1985103741/"><span class="pink">チユニカレディ</span></a>
+
+(牝
+1985
+黒鹿毛
+<a href="/horse/sire/000a0003bb/">グランディ</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/1991101443/"><span class="pink">オギサファイヤ</span></a>
+
+(牝
+1991
+栗毛
+<a href="/horse/sire/000a000cfb/">ディカードレム</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/1996107817/"><span class="pink">テッケンサファイヤ</span></a>
+
+(牝
+1996
+鹿毛
+<a href="/horse/sire/000a0000b0/">コマンダーインチーフ</a>)
+1勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/1997103855/">ステップモア</a>
+
+
+(牡
+1997
+栗毛
+<a href="/horse/sire/000a00025e/">オジジアン</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/1998103346/"><span class="pink">ルビーバーミリオン</span></a>
+
+(牝
+1998
+鹿毛
+<a href="/horse/sire/000a0000b0/">コマンダーインチーフ</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/1999105416/">ヤマニンマルシェ</a>
+
+
+(牡
+1999
+鹿毛
+<a href="/horse/sire/1980106362/">ニホンピロウイナー</a>)
+1勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2001105169/">グリサード</a>
+
+
+(牡
+2001
+鹿毛
+<a href="/horse/sire/1993109188/">ダンスインザダーク</a>)
+地方4勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2003103725/"><span class="pink">シゲルカイケハイ</span></a>
+
+(牝
+2003
+栗毛
+<a href="/horse/sire/000a0000df/">デヒア</a>)
+1勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2004103368/"><span class="pink">ゴールドサファイヤ</span></a>
+
+(牝
+2004
+黒鹿毛
+<a href="/horse/sire/000a000d48/">キンググローリアス</a>)
+地方5勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2006100208/"><span class="pink">バージンサファイヤ</span></a>
+
+(牝
+2006
+鹿毛
+<a href="/horse/sire/000a000da1/">クリプティックラスカル</a>)
+地方6勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;`--</tt>
+
+<a href="/horse/ped/2007101926/"><span class="pink">バージンバラード</span></a>
+
+(牝
+2007
+栗毛
+<a href="/horse/sire/1997100569/">アッミラーレ</a>)
+地方1勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2001103572/"><span class="pink">ザピンキーギャル</span></a>
+
+(牝
+2001
+黒鹿毛
+<a href="/horse/sire/000a000d94/">オース</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2005100008/">オリオンザナイト</a>
+
+
+(牡
+2005
+黒鹿毛
+<a href="/horse/sire/1996103237/">オリオンザサンクス</a>)
+地方5勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2006100674/"><span class="pink">コスミックナイト</span></a>
+
+(牝
+2006
+黒鹿毛
+<a href="/horse/sire/1996103237/">オリオンザサンクス</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2007100008/"><span class="pink">オリオンザオース</span></a>
+
+(牝
+2007
+鹿毛
+<a href="/horse/sire/1996103237/">オリオンザサンクス</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2008100021/">オリオンザイチバン</a>
+
+
+(牡
+2008
+鹿毛
+<a href="/horse/sire/2003102809/">オンファイア</a>)
+地方1勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2009103214/"><span class="pink">リンゴリンゴ</span></a>
+
+(牝
+2009
+黒鹿毛
+<a href="/horse/sire/000a000d77/">オペラハウス</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2010102351/">オリオンザボーイ</a>
+
+
+(牡
+2010
+鹿毛
+<a href="/horse/sire/000a010541/">アルデバランII</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;`--</tt>
+<a href="/horse/ped/2011101637/">マークビイシック</a>
+
+
+(牡
+2011
+鹿毛
+<a href="/horse/sire/1997110152/">ノボジャック</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;`--</tt>
+<a href="/horse/ped/2003104452/">オリオンザバロン</a>
+
+
+(牡
+2003
+栗毛
+<a href="/horse/sire/1996103237/">オリオンザサンクス</a>)
+
+
+<br />
+<tt>&nbsp;|--</tt>
+<a href="/horse/ped/1986100348/">ドリームボーイ</a>
+
+
+(牡
+1986
+黒鹿毛
+<a href="/horse/sire/000a0004e5/">ヴァリィフォージュ</a>)
+3勝
+
+<br />
+<tt>&nbsp;|--</tt>
+
+<a href="/horse/ped/1987100260/"><span class="pink">ダイイチルビー</span></a>
+
+(牝
+1987
+黒鹿毛
+<a href="/horse/sire/000a0003c7/">トウショウボーイ</a>)
+6勝、JRA賞最優秀4歳以上牝馬（1991年）、JRA賞最優秀スプリンター（1992年）
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</tt>1着&nbsp;-&nbsp;安田記念(G1)、スプリンターズS(G1)、京王杯スプリングC(G2)、京都牝馬特別(G3)
+<br /><tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</tt>2着&nbsp;-&nbsp;マイルチャンピオンS(G1)、サンスポ4歳牝馬特別(G2)、高松宮杯(G2)、スワンS(G2)
+<br /><tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</tt>3着&nbsp;-&nbsp;中山牝馬S(G3)
+<br /><tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/1994107894/"><span class="pink">ダイイチシガー</span></a>
+
+(牝
+1994
+鹿毛
+<a href="/horse/sire/1983109006/">トニービン</a>)
+2勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</tt>2着&nbsp;-&nbsp;サンスポ4歳牝馬特別(G2)
+<br /><tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</tt>3着&nbsp;-&nbsp;優駿牝馬(G1)、デイリー杯クイーンC(G3)
+<br /><tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/1999107611/">ギャンブルホース</a>
+
+
+(牡
+1999
+黒鹿毛
+<a href="/horse/sire/000a00033a/">サンデーサイレンス</a>)
+地方6勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2002107237/">ホーマンファラオ</a>
+
+
+(牡
+2002
+栗毛
+<a href="/horse/sire/000a000d77/">オペラハウス</a>)
+4勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2004100277/"><span class="pink">マイネユミドール</span></a>
+
+(牝
+2004
+黒鹿毛
+<a href="/horse/sire/1988101025/">トウカイテイオー</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2006104367/">マイネルプロートス</a>
+
+
+(牡
+2006
+黒鹿毛
+<a href="/horse/sire/000a000082/">ブライアンズタイム</a>)
+2勝、地方2勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2009104655/">マイネルコランダム</a>
+
+
+(牡
+2009
+青鹿毛
+<a href="/horse/sire/000a010a10/">ロージズインメイ</a>)
+2勝、地方7勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2010105480/"><span class="pink">マイネジュリエッタ</span></a>
+
+(牝
+2010
+黒鹿毛
+<a href="/horse/sire/1999107004/">アドマイヤマックス</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;`--</tt>
+<a href="/horse/ped/2013101455/">ウインシガーロ</a>
+
+
+(牡
+2013
+鹿毛
+<a href="/horse/sire/2003104570/">マツリダゴッホ</a>)
+地方1勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/1996107344/"><span class="pink">ダイイチビビット</span></a>
+
+(牝
+1996
+黒鹿毛
+<a href="/horse/sire/1983109006/">トニービン</a>)
+3勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2002101272/">ニホンピロコテツ</a>
+
+
+(セ
+2002
+黒鹿毛
+<a href="/horse/sire/000a0001a7/">ジェイドロバリー</a>)
+地方3勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2003101323/"><span class="pink">ペチュード</span></a>
+
+(牝
+2003
+鹿毛
+<a href="/horse/sire/000a000348/">タバスコキャット</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2004107059/">ダイイチビビットの2004</a>
+
+
+(牡
+2004
+黒鹿毛
+<a href="/horse/sire/1987107235/">メジロマックイーン</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2006104368/">ドリームゲイル</a>
+
+
+(牡
+2006
+鹿毛
+<a href="/horse/sire/1997110025/">アグネスデジタル</a>)
+1勝、地方1勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2007104369/"><span class="pink">マイネアロマ</span></a>
+
+(牝
+2007
+黒鹿毛
+<a href="/horse/sire/000a010a10/">ロージズインメイ</a>)
+1勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2008104485/"><span class="pink">タカイチガール</span></a>
+
+(牝
+2008
+青鹿毛
+<a href="/horse/sire/000a010a10/">ロージズインメイ</a>)
+地方3勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2009104656/"><span class="pink">コスモアンドロメダ</span></a>
+
+(牝
+2009
+黒鹿毛
+<a href="/horse/sire/000a010a10/">ロージズインメイ</a>)
+2勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2011104723/"><span class="pink">ウインアプローズ</span></a>
+
+(牝
+2011
+黒鹿毛
+<a href="/horse/sire/2004103328/">スクリーンヒーロー</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2012100244/">ウインマジュール</a>
+
+
+(牡
+2012
+鹿毛
+<a href="/horse/sire/2001103114/">ダイワメジャー</a>)
+地方6勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2014100229/">ウインクリムゾン</a>
+
+
+(牡
+2014
+鹿毛
+<a href="/horse/sire/2003104570/">マツリダゴッホ</a>)
+1勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2015100237/">ビビッドプルメージ</a>
+
+
+(牡
+2015
+青鹿毛
+<a href="/horse/sire/000a010a10/">ロージズインメイ</a>)
+地方3勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;`--</tt>
+<a href="/horse/ped/2016100249/">ウインカーマイン</a>
+
+
+(牡
+2016
+鹿毛
+<a href="/horse/sire/2003104570/">マツリダゴッホ</a>)
+地方6勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/1997103649/">ダイイチサンデー</a>
+
+
+(牡
+1997
+青毛
+<a href="/horse/sire/000a00033a/">サンデーサイレンス</a>)
+1勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/1999107473/"><span class="pink">アイアンビューティ</span></a>
+
+(牝
+1999
+鹿毛
+<a href="/horse/sire/000a000082/">ブライアンズタイム</a>)
+地方1勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2006103731/">ブルースターキング</a>
+
+
+(牡
+2006
+黒鹿毛
+<a href="/horse/sire/2001103460/">キングカメハメハ</a>)
+4勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2008103640/"><span class="pink">イットーイチバン</span></a>
+
+(牝
+2008
+黒鹿毛
+<a href="/horse/sire/2002100816/">ディープインパクト</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2009101622/"><span class="pink">アイアンビューティの2009</span></a>
+
+(牝
+2009
+栗毛
+<a href="/horse/sire/000a010a10/">ロージズインメイ</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;`--</tt>
+
+<a href="/horse/ped/2011101357/"><span class="pink">ハシルヨアカルク</span></a>
+
+(牝
+2011
+鹿毛
+<a href="/horse/sire/2002100816/">ディープインパクト</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2000107633/">ダイイチサイレンス</a>
+
+
+(セ
+2000
+青鹿毛
+<a href="/horse/sire/000a00033a/">サンデーサイレンス</a>)
+地方6勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2002100893/">ダイイチルビーの2002</a>
+
+
+(牡
+2002
+青鹿毛
+<a href="/horse/sire/1995108742/">エルコンドルパサー</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;`--</tt>
+<a href="/horse/ped/2005104344/">キャプテンルビー</a>
+
+
+(牡
+2005
+芦毛
+<a href="/horse/sire/1998110135/">クロフネ</a>)
+2勝、地方3勝
+
+<br />
+<tt>&nbsp;|--</tt>
+
+<a href="/horse/ped/1988107615/"><span class="pink">ドリームドリーム</span></a>
+
+(牝
+1988
+鹿毛
+<a href="/horse/sire/000a0004b1/">ロイヤルニジンスキー</a>)
+4勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/1995107599/"><span class="pink">ボストンタイム</span></a>
+
+(牝
+1995
+鹿毛
+<a href="/horse/sire/000a000082/">ブライアンズタイム</a>)
+4勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2003103415/">マルハチロドリゲス</a>
+
+
+(牡
+2003
+鹿毛
+<a href="/horse/sire/1994109501/">ジェットアラウンド</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2004102734/">ドリームサンデー</a>
+
+
+(牡
+2004
+青毛
+<a href="/horse/sire/1994109686/">タイキシャトル</a>)
+6勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt>2着&nbsp;-&nbsp;金鯱賞(G2)、中日新聞杯(G3)
+<br /><tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt>3着&nbsp;-&nbsp;函館記念(G3)
+<br /><tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2006104946/">ロイヤルポケット</a>
+
+
+(牡
+2006
+鹿毛
+<a href="/horse/sire/1998101786/">ジャングルポケット</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2007104986/"><span class="pink">ドリームレディ</span></a>
+
+(牝
+2007
+青毛
+<a href="/horse/sire/000a010a10/">ロージズインメイ</a>)
+地方1勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2009105262/"><span class="pink">サイレンスドリーム</span></a>
+
+(牝
+2009
+鹿毛
+<a href="/horse/sire/2002100816/">ディープインパクト</a>)
+地方1勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2013102002/"><span class="pink">グランパルファン</span></a>
+
+(牝
+2013
+鹿毛
+<a href="/horse/sire/1999106689/">ゴールドアリュール</a>)
+1勝、地方1勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2014100793/">キングディグニティ</a>
+
+
+(牡
+2014
+黒鹿毛
+<a href="/horse/sire/000a0022d2/">キングズベスト</a>)
+2勝、地方1勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2015100808/">アイムワン</a>
+
+
+(牡
+2015
+鹿毛
+<a href="/horse/sire/2008102636/">オルフェーヴル</a>)
+地方5勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2017102049/"><span class="pink">ルーラルーラ</span></a>
+
+(牝
+2017
+青鹿毛
+<a href="/horse/sire/2007103143/">ルーラーシップ</a>)
+地方3勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;`--</tt>
+
+<a href="/horse/ped/2018101453/"><span class="pink">プッシュユアセルフ</span></a>
+
+(牝
+2018
+黒鹿毛
+<a href="/horse/sire/2011110091/">アジアエクスプレス</a>)
+地方6勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;`--</tt>
+
+<a href="/horse/ped/1996106883/"><span class="pink">チャイナドリーム</span></a>
+
+(牝
+1996
+鹿毛
+<a href="/horse/sire/000a000d73/">シャンハイ</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`--</tt>
+
+<a href="/horse/ped/2000101047/"><span class="pink">アポンマイライフ</span></a>
+
+(牝
+2000
+黒鹿毛
+<a href="/horse/sire/000a000d8e/">サンシャック</a>)
+1勝
+
+<br />
+<tt>&nbsp;|--</tt>
+
+<a href="/horse/ped/1989100591/"><span class="pink">ウメノアスコット</span></a>
+
+(牝
+1989
+鹿毛
+<a href="/horse/sire/000a000465/">ラッキーソブリン</a>)
+1勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/1994105116/"><span class="pink">ウメノダンサー</span></a>
+
+(牝
+1994
+栗毛
+<a href="/horse/sire/1982101222/">サクラユタカオー</a>)
+4勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2001101803/">キセキウィナー</a>
+
+
+(牡
+2001
+栗毛
+<a href="/horse/sire/1992109618/">フジキセキ</a>)
+地方1勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2002101969/"><span class="pink">トシノヘクター</span></a>
+
+(牝
+2002
+栗毛
+<a href="/horse/sire/000a000d6b/">ヘクタープロテクター</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2004100320/">マイネルキーロフ</a>
+
+
+(牡
+2004
+青鹿毛
+<a href="/horse/sire/1998101554/">マンハッタンカフェ</a>)
+5勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2005105054/">サダムイダテン</a>
+
+
+(牡
+2005
+栗毛
+<a href="/horse/sire/000a000134/">フォーティナイナー</a>)
+1勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt>2着&nbsp;-&nbsp;ラジオNIKKEI杯(G3)
+<br /><tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2007104400/">サダムシンプウ</a>
+
+
+(牡
+2007
+栗毛
+<a href="/horse/sire/2000101426/">ネオユニヴァース</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2009104691/">ドリームシアター</a>
+
+
+(牡
+2009
+栗毛
+<a href="/horse/sire/1997110025/">アグネスデジタル</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2010105508/">イーグルモア</a>
+
+
+(牡
+2010
+栗毛
+<a href="/horse/sire/2003102991/">アドマイヤムーン</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2012100263/"><span class="pink">ピリカグリーン</span></a>
+
+(牝
+2012
+黒鹿毛
+<a href="/horse/sire/1998101786/">ジャングルポケット</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2013101476/">レーヴムーン</a>
+
+
+(牡
+2013
+黒鹿毛
+<a href="/horse/sire/2003102991/">アドマイヤムーン</a>)
+4勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;`--</tt>
+<a href="/horse/ped/2014100677/">マイネルエフォート</a>
+
+
+(牡
+2014
+鹿毛
+<a href="/horse/sire/1998101786/">ジャングルポケット</a>)
+地方3勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/1995106614/">ウエノサドラーズ</a>
+
+
+(牡
+1995
+鹿毛
+<a href="/horse/sire/000a000260/">オールドヴィック</a>)
+地方1勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/1996105865/">マルタカブライアン</a>
+
+
+(牡
+1996
+青鹿毛
+<a href="/horse/sire/000a000082/">ブライアンズタイム</a>)
+1勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/1999107196/">マイネルセレクト</a>
+
+
+(牡
+1999
+栗毛
+<a href="/horse/sire/000a000134/">フォーティナイナー</a>)
+7勝、地方3勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt>1着&nbsp;-&nbsp;JBCスプリント(G1)、東京盃(G2)、シリウスS(G3)、ガーネットS(G3)、黒船賞(G3)
+<br /><tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt>2着&nbsp;-&nbsp;JBCスプリント(G1)
+<br /><tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2002101101/">ウメノアスコットの2002</a>
+
+
+(牡
+2002
+黒鹿毛
+<a href="/horse/sire/1992190011/">ピルサドスキー</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2003107000/"><span class="pink">ブルーベルベット</span></a>
+
+(牝
+2003
+栗毛
+<a href="/horse/sire/000a000134/">フォーティナイナー</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2008103496/"><span class="pink">サウンドベル</span></a>
+
+(牝
+2008
+鹿毛
+<a href="/horse/sire/1989108341/">サクラバクシンオー</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2009101473/">ブルーハーツクライ</a>
+
+
+(牡
+2009
+栗毛
+<a href="/horse/sire/2001103038/">ハーツクライ</a>)
+3勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2010101304/">ブルーグランツ</a>
+
+
+(牡
+2010
+鹿毛
+<a href="/horse/sire/1993109188/">ダンスインザダーク</a>)
+地方3勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2011101263/">ゲンパチケンザン</a>
+
+
+(牡
+2011
+栗毛
+<a href="/horse/sire/1999106689/">ゴールドアリュール</a>)
+1勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2014101043/">ボニートラボ</a>
+
+
+(牡
+2014
+芦毛
+<a href="/horse/sire/1998110135/">クロフネ</a>)
+地方2勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2016101118/"><span class="pink">ブルーベルベットの2016</span></a>
+
+(牝
+2016
+鹿毛
+<a href="/horse/sire/2000101426/">ネオユニヴァース</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2017102331/">プラチナヴルール</a>
+
+
+(セ
+2017
+芦毛
+<a href="/horse/sire/2009102739/">ゴールドシップ</a>)
+地方1勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2018102520/">ブルーライトニング</a>
+
+
+(牡
+2018
+鹿毛
+<a href="/horse/sire/2009106599/">フェノーメノ</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2020100094/">ベストフェローズ</a>
+
+
+(牡
+2020
+栗毛
+<a href="/horse/sire/2005102837/">エスポワールシチー</a>)
+地方1勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;`--</tt>
+
+<a href="/horse/ped/2021100079/"><span class="pink">ビーシャイニー</span></a>
+
+(牝
+2021
+鹿毛
+<a href="/horse/sire/000a0141f9/">ビーチパトロール</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2007103536/"><span class="pink">ラブアスコットー</span></a>
+
+(牝
+2007
+栗毛
+<a href="/horse/sire/000a00fe9b/">プリサイスエンド</a>)
+地方3勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2013102263/"><span class="pink">ラブアスコットーの2013</span></a>
+
+(牝
+2013
+鹿毛
+<a href="/horse/sire/2001103312/">ブラックタイド</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2014101048/"><span class="pink">ベニコウライ</span></a>
+
+(牝
+2014
+鹿毛
+<a href="/horse/sire/2000101517/">ゼンノロブロイ</a>)
+地方8勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2016101121/">スナイプダンス</a>
+
+
+(牡
+2016
+鹿毛
+<a href="/horse/sire/000a011b05/">モンテロッソ</a>)
+地方1勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2017102335/"><span class="pink">エースエトワール</span></a>
+
+(牝
+2017
+鹿毛
+<a href="/horse/sire/2000101426/">ネオユニヴァース</a>)
+地方1勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2018102524/">アークデスティーノ</a>
+
+
+(牡
+2018
+鹿毛
+<a href="/horse/sire/2006105511/">レッドスパーダ</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2019102962/">エムティスパーク</a>
+
+
+(牡
+2019
+鹿毛
+<a href="/horse/sire/2006105511/">レッドスパーダ</a>)
+地方1勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;`--</tt>
+<a href="/horse/ped/2021100084/">マグネター</a>
+
+
+(牡
+2021
+鹿毛
+<a href="/horse/sire/2008103548/">ダノンバラード</a>)
+地方1勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;`--</tt>
+<a href="/horse/ped/2009101467/">ドリームアスコット</a>
+
+
+(牡
+2009
+栗毛
+<a href="/horse/sire/000a00fe9b/">プリサイスエンド</a>)
+
+
+<br />
+<tt>&nbsp;|--</tt>
+
+<a href="/horse/ped/1990100666/"><span class="pink">マキバノレディ</span></a>
+
+(牝
+1990
+青鹿毛
+<a href="/horse/sire/000a000465/">ラッキーソブリン</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/1995107526/"><span class="pink">イシノノゾミ</span></a>
+
+(牝
+1995
+黒鹿毛
+<a href="/horse/sire/1986109001/">カコイーシーズ</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/1996106813/">イシノナイト</a>
+
+
+(牡
+1996
+青毛
+<a href="/horse/sire/000a00033a/">サンデーサイレンス</a>)
+地方17勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/1997107490/"><span class="pink">イシノハピネス</span></a>
+
+(牝
+1997
+黒鹿毛
+<a href="/horse/sire/000a000013/">アフリート</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2001106062/">リトルクラウド</a>
+
+
+(牡
+2001
+鹿毛
+<a href="/horse/sire/000a00003b/">アラジ</a>)
+地方9勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2002105902/"><span class="pink">アメージングローズ</span></a>
+
+(牝
+2002
+鹿毛
+<a href="/horse/sire/000a000d77/">オペラハウス</a>)
+地方5勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2004105535/">クニノユメオー</a>
+
+
+(セ
+2004
+栗毛
+<a href="/horse/sire/000a000348/">タバスコキャット</a>)
+地方29勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2005103948/"><span class="pink">エスプリゴールド</span></a>
+
+(牝
+2005
+栗毛
+<a href="/horse/sire/1998101530/">アグネスゴールド</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;`--</tt>
+
+<a href="/horse/ped/2007106294/"><span class="pink">ジェネスエヴァ</span></a>
+
+(牝
+2007
+栗毛
+<a href="/horse/sire/1986109001/">カコイーシーズ</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/1998101229/"><span class="pink">イシノオーラム</span></a>
+
+(牝
+1998
+黒鹿毛
+<a href="/horse/sire/000a0000bd/">クリミナルタイプ</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2001103493/"><span class="pink">サダムマルルロア</span></a>
+
+(牝
+2001
+黒鹿毛
+<a href="/horse/sire/000a0000b0/">コマンダーインチーフ</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2003107006/">サダムスカイミロク</a>
+
+
+(牡
+2003
+青毛
+<a href="/horse/sire/1998101516/">アグネスタキオン</a>)
+地方4勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2005104262/">クリーンピカタン</a>
+
+
+(牡
+2005
+黒鹿毛
+<a href="/horse/sire/000a000134/">フォーティナイナー</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2006103877/">ラインクラッシャー</a>
+
+
+(牡
+2006
+青鹿毛
+<a href="/horse/sire/2000101426/">ネオユニヴァース</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2008103785/">ケイオーホップ</a>
+
+
+(牡
+2008
+青鹿毛
+<a href="/horse/sire/2000190010/">アルカセット</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;`--</tt>
+<a href="/horse/ped/2010109189/">クラウンガネーシャ</a>
+
+
+(牡
+2010
+黒鹿毛
+<a href="/horse/sire/000a000d71/">ロドリゴデトリアーノ</a>)
+地方1勝
+
+<br />
+<tt>&nbsp;|--</tt>
+
+<a href="/horse/ped/1991101449/"><span class="pink">フジノスイショウ</span></a>
+
+(牝
+1991
+黒鹿毛
+<a href="/horse/sire/000a0003bd/">マルゼンスキー</a>)
+1勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/1997103978/">イアラリゲル</a>
+
+
+(牡
+1997
+黒鹿毛
+<a href="/horse/sire/000a000d7f/">エルハーブ</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/1999105535/"><span class="pink">カテナチオ</span></a>
+
+(牝
+1999
+黒鹿毛
+<a href="/horse/sire/000a0001e9/">ライブリーワン</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2000104772/"><span class="pink">アクアフレスカ</span></a>
+
+(牝
+2000
+青鹿毛
+<a href="/horse/sire/000a000843/">ウォーニング</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2004106843/">ノーキュアノーペイ</a>
+
+
+(牡
+2004
+青毛
+<a href="/horse/sire/000a00035e/">ティンバーカントリー</a>)
+2勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2005105078/">ゴーフォアブローク</a>
+
+
+(牡
+2005
+鹿毛
+<a href="/horse/sire/000a000da4/">スクワートルスクワート</a>)
+1勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2006104418/">スウッシュ</a>
+
+
+(牡
+2006
+鹿毛
+<a href="/horse/sire/000a0000b5/">コロナドズクエスト</a>)
+1勝、地方6勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2009104716/">フレイムユニコーン</a>
+
+
+(セ
+2009
+黒鹿毛
+<a href="/horse/sire/1999106756/">デュランダル</a>)
+地方2勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;`--</tt>
+<a href="/horse/ped/2011104958/">マイアリエス</a>
+
+
+(牡
+2011
+鹿毛
+<a href="/horse/sire/1996110138/">サウスヴィグラス</a>)
+地方6勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2001101854/">イアラユーラシア</a>
+
+
+(牡
+2001
+鹿毛
+<a href="/horse/sire/000a000134/">フォーティナイナー</a>)
+4勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2003100363/"><span class="pink">ファームウィル</span></a>
+
+(牝
+2003
+鹿毛
+<a href="/horse/sire/1992190011/">ピルサドスキー</a>)
+地方4勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2004106845/">アンティシペイター</a>
+
+
+(牡
+2004
+鹿毛
+<a href="/horse/sire/000a000082/">ブライアンズタイム</a>)
+地方5勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2005105084/"><span class="pink">ブエンビアッヘ</span></a>
+
+(牝
+2005
+黒鹿毛
+<a href="/horse/sire/000a00007c/">ボストンハーバー</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2006104425/">フジノスイショウの2006</a>
+
+
+(牡
+2006
+鹿毛
+<a href="/horse/sire/000a000134/">フォーティナイナー</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;`--</tt>
+
+<a href="/horse/ped/2008104547/"><span class="pink">マザーオブゼータ</span></a>
+
+(牝
+2008
+鹿毛
+<a href="/horse/sire/1998101516/">アグネスタキオン</a>)
+地方1勝
+
+<br />
+<tt>&nbsp;|--</tt>
+
+<a href="/horse/ped/1993106775/"><span class="pink">フジノキャラット</span></a>
+
+(牝
+1993
+黒鹿毛
+<a href="/horse/sire/000a0002b0/">リズム</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/1998103423/">ケイエヌセンター</a>
+
+
+(牡
+1998
+鹿毛
+<a href="/horse/sire/000a000287/">ポリッシュネイビー</a>)
+地方3勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/1999105484/">モエレバクシン</a>
+
+
+(牡
+1999
+鹿毛
+<a href="/horse/sire/000a000148/">ジェネラス</a>)
+地方3勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2000100408/"><span class="pink">フジノキャラットの2000</span></a>
+
+(牝
+2000
+鹿毛
+<a href="/horse/sire/000a000134/">フォーティナイナー</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2001105276/"><span class="pink">ゴッドエンジェル</span></a>
+
+(牝
+2001
+鹿毛
+<a href="/horse/sire/000a0001d4/">ラムタラ</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2006100359/"><span class="pink">ベルレイナ</span></a>
+
+(牝
+2006
+鹿毛
+<a href="/horse/sire/1997104902/">レギュラーメンバー</a>)
+地方3勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2007102048/">ダイナミックソング</a>
+
+
+(牡
+2007
+鹿毛
+<a href="/horse/sire/1992109612/">タヤスツヨシ</a>)
+地方10勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2009101071/"><span class="pink">メイレディ</span></a>
+
+(牝
+2009
+黒鹿毛
+<a href="/horse/sire/1992109450/">ジェニュイン</a>)
+地方5勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2010102059/"><span class="pink">ヒアルロンサン</span></a>
+
+(牝
+2010
+鹿毛
+<a href="/horse/sire/000a000006/">トワイニング</a>)
+1勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2011106250/"><span class="pink">マーチトップレデー</span></a>
+
+(牝
+2011
+栗毛
+<a href="/horse/sire/1996107315/">ブラックタキシード</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2012105839/">キャプテンシップ</a>
+
+
+(牡
+2012
+鹿毛
+<a href="/horse/sire/1997110152/">ノボジャック</a>)
+5勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2013102894/"><span class="pink">エルブランシュ</span></a>
+
+(牝
+2013
+鹿毛
+<a href="/horse/sire/1997101264/">ゴールドヘイロー</a>)
+地方2勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;`--</tt>
+<a href="/horse/ped/2016102364/">キングキャラット</a>
+
+
+(牡
+2016
+栗毛
+<a href="/horse/sire/1997110152/">ノボジャック</a>)
+1勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2002103856/"><span class="pink">ルスナイオブカラー</span></a>
+
+(牝
+2002
+黒鹿毛
+<a href="/horse/sire/000a000082/">ブライアンズタイム</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2007102083/"><span class="pink">ローズママ</span></a>
+
+(牝
+2007
+黒鹿毛
+<a href="/horse/sire/1995101767/">メイショウオウドウ</a>)
+地方3勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2008102074/"><span class="pink">ミセスボス</span></a>
+
+(牝
+2008
+黒鹿毛
+<a href="/horse/sire/1994109686/">タイキシャトル</a>)
+地方1勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2009101121/">ムサシマンボ</a>
+
+
+(牡
+2009
+黒鹿毛
+<a href="/horse/sire/2001103890/">スズカマンボ</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2010102100/"><span class="pink">コンポーザー</span></a>
+
+(牝
+2010
+鹿毛
+<a href="/horse/sire/2003102205/">メイショウサムソン</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2011103182/">シンゼンタイガ</a>
+
+
+(牡
+2011
+栗毛
+<a href="/horse/sire/1997110152/">ノボジャック</a>)
+1勝、地方6勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2012105890/">ライブリファースト</a>
+
+
+(牡
+2012
+鹿毛
+<a href="/horse/sire/1994109686/">タイキシャトル</a>)
+地方3勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2013102945/">メイショウゴテツ</a>
+
+
+(牡
+2013
+青鹿毛
+<a href="/horse/sire/000a011099/">シニスターミニスター</a>)
+1勝、地方6勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2014103841/">メイショウブルゴー</a>
+
+
+(牡
+2014
+栃栗毛
+<a href="/horse/sire/1997110152/">ノボジャック</a>)
+地方6勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2015103620/"><span class="pink">ロイヤルソード</span></a>
+
+(牝
+2015
+芦毛
+<a href="/horse/sire/000a00fa34/">スウェプトオーヴァーボード</a>)
+地方4勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2016102445/">インシデント</a>
+
+
+(牡
+2016
+黒鹿毛
+<a href="/horse/sire/2002100978/">カネヒキリ</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2017102939/">スマイルオリオン</a>
+
+
+(牡
+2017
+黒鹿毛
+<a href="/horse/sire/2001100650/">メイショウボーラー</a>)
+地方3勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2018103156/">エスケイヤマト</a>
+
+
+(牡
+2018
+黒鹿毛
+<a href="/horse/sire/1996110138/">サウスヴィグラス</a>)
+地方5勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2019102601/">ワンダーボルドネス</a>
+
+
+(牡
+2019
+栗毛
+<a href="/horse/sire/2006103169/">トーセンジョーダン</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;`--</tt>
+<a href="/horse/ped/2020100755/">モデリスタ</a>
+
+
+(牡
+2020
+鹿毛
+<a href="/horse/sire/2003102991/">アドマイヤムーン</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2003103874/"><span class="pink">ルスナイガーネット</span></a>
+
+(牝
+2003
+黒鹿毛
+<a href="/horse/sire/000a000d90/">ホークアタック</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2006100378/"><span class="pink">ウラカワターリア</span></a>
+
+(牝
+2006
+鹿毛
+<a href="/horse/sire/1997110152/">ノボジャック</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2007102306/"><span class="pink">ロマネコ</span></a>
+
+(牝
+2007
+鹿毛
+<a href="/horse/sire/000a00fe3b/">グランデラ</a>)
+
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2008102282/"><span class="pink">フラワーキー</span></a>
+
+(牝
+2008
+青鹿毛
+<a href="/horse/sire/1992109450/">ジェニュイン</a>)
+地方3勝
+
+<br />
+<tt>&nbsp;|&nbsp;&nbsp;&nbsp;`--</tt>
+<a href="/horse/ped/2009106668/">カシノアゲート</a>
+
+
+(牡
+2009
+黒鹿毛
+<a href="/horse/sire/2003102461/">ソングオブウインド</a>)
+
+
+<br />
+<tt>&nbsp;`--</tt>
+
+<a href="/horse/ped/1998104934/"><span class="pink">ダイヤモンドクイン</span></a>
+
+(牝
+1998
+鹿毛
+<a href="/horse/sire/000a0001d4/">ラムタラ</a>)
+地方5勝
+
+<br />
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2005100912/">ラブユーイチフジ</a>
+
+
+(牡
+2005
+栗毛
+<a href="/horse/sire/1992109618/">フジキセキ</a>)
+地方5勝
+
+<br />
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2006101513/"><span class="pink">ブリリン</span></a>
+
+(牝
+2006
+栗毛
+<a href="/horse/sire/1994109686/">タイキシャトル</a>)
+地方6勝
+
+<br />
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2015106174/">シャフトオブライト</a>
+
+
+(牡
+2015
+栗毛
+<a href="/horse/sire/2005101358/">ディープスカイ</a>)
+3勝、地方2勝
+
+<br />
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2016106244/"><span class="pink">ドミノハート</span></a>
+
+(牝
+2016
+栗毛
+<a href="/horse/sire/2009105084/">ディープブリランテ</a>)
+地方5勝
+
+<br />
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2017104077/">バッファローボム</a>
+
+
+(牡
+2017
+栗毛
+<a href="/horse/sire/2007102923/">ヴィクトワールピサ</a>)
+地方1勝
+
+<br />
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2018104342/"><span class="pink">シャトワイエー</span></a>
+
+(牝
+2018
+栃栗毛
+<a href="/horse/sire/2009106230/">カレンブラックヒル</a>)
+地方1勝
+
+<br />
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2019106601/"><span class="pink">ビュークレスト</span></a>
+
+(牝
+2019
+黒鹿毛
+<a href="/horse/sire/2007102923/">ヴィクトワールピサ</a>)
+地方2勝
+
+<br />
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2020104768/">ウィービースティ</a>
+
+
+(牡
+2020
+鹿毛
+<a href="/horse/sire/2009100921/">ホッコータルマエ</a>)
+地方3勝
+
+<br />
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2021104422/">グランドセントラル</a>
+
+
+(牡
+2021
+黒鹿毛
+<a href="/horse/sire/000a0127e4/">シャンハイボビー</a>)
+中央現役
+
+<br />
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2022104408/"><span class="pink">ブリリンの2022</span></a>
+
+(牝
+2022
+黒鹿毛
+<a href="/horse/sire/000a0127e4/">シャンハイボビー</a>)
+
+
+<br />
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;`--</tt>
+<a href="/horse/ped/2023103171/">ブリリンの2023</a>
+
+
+(牡
+2023
+栗毛
+<a href="/horse/sire/2013104704/">ディーマジェスティ</a>)
+
+
+<br />
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2007100848/">メイキングドリーム</a>
+
+
+(牡
+2007
+黒鹿毛
+<a href="/horse/sire/1998101554/">マンハッタンカフェ</a>)
+地方1勝
+
+<br />
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2008100867/"><span class="pink">ダイヤモンドギフト</span></a>
+
+(牝
+2008
+栗毛
+<a href="/horse/sire/000a000082/">ブライアンズタイム</a>)
+
+
+<br />
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2012102676/">キザシ</a>
+
+
+(牡
+2012
+栗毛
+<a href="/horse/sire/1996110138/">サウスヴィグラス</a>)
+1勝、地方3勝
+
+<br />
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2013104779/">ビークイック</a>
+
+
+(牡
+2013
+栗毛
+<a href="/horse/sire/000a011099/">シニスターミニスター</a>)
+3勝、地方3勝
+
+<br />
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2014105042/"><span class="pink">プレシャスクイン</span></a>
+
+(牝
+2014
+栗毛
+<a href="/horse/sire/000a0118e8/">バトルプラン</a>)
+地方4勝
+
+<br />
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2015106161/"><span class="pink">ホリーセクション</span></a>
+
+(牝
+2015
+栗毛
+<a href="/horse/sire/000a012045/">タートルボウル</a>)
+地方3勝
+
+<br />
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2016106237/"><span class="pink">フラッフィーベア</span></a>
+
+(牝
+2016
+鹿毛
+<a href="/horse/sire/2006102424/">ナカヤマフェスタ</a>)
+2勝
+
+<br />
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2017104060/"><span class="pink">エドノフェリーチェ</span></a>
+
+(牝
+2017
+芦毛
+<a href="/horse/sire/2009102739/">ゴールドシップ</a>)
+3勝
+
+<br />
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2018104324/">モンストルシチー</a>
+
+
+(牡
+2018
+黒鹿毛
+<a href="/horse/sire/2009106599/">フェノーメノ</a>)
+地方7勝
+
+<br />
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2020104752/">クレシューズ</a>
+
+
+(牡
+2020
+黒鹿毛
+<a href="/horse/sire/000a011099/">シニスターミニスター</a>)
+
+
+<br />
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2021104408/">クラージュミノル</a>
+
+
+(牡
+2021
+芦毛
+<a href="/horse/sire/2009102739/">ゴールドシップ</a>)
+中央現役
+
+<br />
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2022104396/"><span class="pink">ダイヤモンドギフトの2022</span></a>
+
+(牝
+2022
+芦毛
+<a href="/horse/sire/2009102739/">ゴールドシップ</a>)
+
+
+<br />
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;`--</tt>
+<a href="/horse/ped/2023103163/">ダイヤモンドギフトの2023</a>
+
+
+(牡
+2023
+黒鹿毛
+<a href="/horse/sire/2011103565/">イスラボニータ</a>)
+
+
+<br />
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2009104148/">ダークブレイズ</a>
+
+
+(牡
+2009
+黒鹿毛
+<a href="/horse/sire/000a010a10/">ロージズインメイ</a>)
+2勝
+
+<br />
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--</tt>
+
+<a href="/horse/ped/2010103261/"><span class="pink">オーキッドキャリー</span></a>
+
+(牝
+2010
+鹿毛
+<a href="/horse/sire/000a011135/">チチカステナンゴ</a>)
+地方2勝
+
+<br />
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2011102532/">アルテ</a>
+
+
+(牡
+2011
+栗毛
+<a href="/horse/sire/2003104570/">マツリダゴッホ</a>)
+4勝
+
+<br />
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--</tt>
+<a href="/horse/ped/2012103474/">サトノハーデス</a>
+
+
+(牡
+2012
+鹿毛
+<a href="/horse/sire/000a010542/">エンパイアメーカー</a>)
+1勝
+
+<br />
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`--</tt>
+<a href="/horse/ped/2013104780/"><b>フォーラウェイ</b></a>
+
+
+(牡
+2013
+鹿毛
+<a href="/horse/sire/2001103890/">スズカマンボ</a>)
+3勝
+
+<br />
+
+</div><!-- /.mare_line_box -->
+</div><!-- / .mare_line -->
+</div><!-- / .db_main_deta -->
+
+
+
+<div class="mb30">
+<!-- Geniee Wrapper Body Tag 1492793 -->
+<div data-cptid="1492793">
+<script>
+gnshbrequest.cmd.push(function() {
+gnshbrequest.applyPassback("1492793", "[data-cptid='1492793']");
+});
+</script>
+</div>
+<!-- /Geniee Wrapper Body Tag 1492793 -->
+</div>
+
+</div><!-- / #contents -->
+
+<footer>
+<div class="NkFooterArea">
+<div class="BtnPagetop">
+<a href="javascript:void(0)" title="ページトップへ"></a>
+</div><!-- /.BtnPagetop -->
+<script type="text/javascript">
+$(function() {
+$('.BtnPagetop a').click(function () {
+$('body,html').animate({
+scrollTop: 0
+}, 400);
+return false;
+});
+});
+</script>
+<div class="KeirinLink01">
+<a href="//keirin.netkeiba.com/?rf=nk_pc_footer" title="netkeirin"><img src="https://cdn.netkeiba.com/img.www/style/netkeiba.ja/image/common/PC_footer_bnr01.png" alt="いま競輪が熱い！nerkeirinで競輪を気軽に楽しもう" /></a>
+</div><!-- /.KeirinLink01 -->
+<dl class="FootSiteTitle fc">
+<dt>
+<a href="https://www.netkeiba.com/?rf=footer" title="netkeiba.com">
+<img src="https://cdn.netkeiba.com/img.www/style/netkeiba.ja/image/common/netkeiba_logo01.png" alt="netkeiba.com" />
+</a>
+</dt>
+<dd>
+<p>利用者数<strong>1700</strong>万人突破！<strong>No.1</strong>競馬サイト</p>
+</dd>
+</dl>
+<div class="FootWrap">
+<dl class="NkFoot01 NkFootCateLink">
+<dt>カテゴリ</dt>
+<dd class="fc">
+<ul>
+<li>
+<a href="https://news.netkeiba.com/?rf=footer" title="ニュース">ニュース</a>
+</li>
+<li>
+<a href="https://race.netkeiba.com/top/?rf=footer" title="レース">レース</a>
+</li>
+<li>
+<a href="https://yoso.netkeiba.com/?rf=footer" title="ウマい馬券">ウマい馬券</a>
+</li>
+<li>
+<a href="https://news.netkeiba.com/?pid=column_top&rf=footer" title="コラム">コラム</a>
+</li>
+<li>
+<a href="https://tv.netkeiba.com/?rf=footer" title="netkeibaTV">netkeibaTV</a>
+</li>
+<li>
+<a href="https://nar.netkeiba.com/top/?rf=footer" title="地方競馬">地方競馬</a>
+</li>
+<li>
+<a href="https://db.netkeiba.com/?rf=footer" title="データベース">データベース</a>
+</li>
+<li>
+<a href="https://orepro.netkeiba.com/?rf=footer" title="俺プロ">俺プロ</a>
+</li>
+</ul>
+<ul>
+<li>
+<a href="https://owner.netkeiba.com/?rf=footer" title="一口馬主">一口馬主</a>
+</li>
+<li>
+<a href="https://pog.netkeiba.com/?rf=footer" title="POG">POG</a>
+</li>
+<li>
+<a href="https://bbs.pc.keiba.findfriends.jp/?rf=footer" title="競馬広場">競馬広場</a>
+</li>
+<li>
+<a href="https://dir.netkeiba.com/keibamatome/index.html?rf=footer" title="まとめ">まとめ</a>
+</li>
+<li>
+<a href="https://yoso.netkeiba.com/senmonshi/?rf=footer" title="競馬新聞">競馬新聞</a>
+</li>
+<li>
+<a href="https://race.netkeiba.com/bookmark/bookmark.html?rf=footer" title="お気に入り馬">お気に入り馬</a>
+</li>
+<li>
+<a href="https://regist.netkeiba.com/?rf=footer" title="アカウント">アカウント</a>
+</li>
+</ul>
+</dd>
+</dl>
+<dl class="NkFoot01">
+<dt>ヘルプ＆ガイド</dt>
+<dd>
+<ul>
+<li>
+<a href="https://info.netkeiba.com/?rf=footer" title="お知らせ">お知らせ</a>
+</li>
+<li>
+<a href="https://regist.netkeiba.com/?pid=premium&rf=footer" title="プレミアムサービスのご案内">プレミアムサービスのご案内</a>
+</li>
+<li>
+<a href="https://regist.netkeiba.com/?pid=help&rf=footer" title="よくある質問・お問い合わせ">よくある質問・お問い合わせ</a>
+</li>
+</ul>
+</dd>
+</dl>
+<dl class="NkFoot01">
+<dt>netkeiba.comについて</dt>
+<dd>
+<ul>
+<li>
+<a href="https://www.netkeiba.com/recruit/?rf=footer" title="採用情報">採用情報</a>
+</li>
+<li>
+<a href="https://www.netkeiba.com/info/ad/?rf=footer" title="広告掲載について">広告掲載について</a>
+</li>
+<li>
+<a href="https://www.netkeiba.com/info/kiyaku.html?rf=footer" title="利用規約">利用規約</a>
+</li>
+<li>
+<a href="https://www.netdreamers.co.jp/company/about/privacy.html?rf=footer" title="プライバシーポリシー">プライバシーポリシー</a>
+</li>
+<li>
+<a href="https://www.netkeiba.com/info/guide.html?rf=footer" title="投稿ガイドライン">投稿ガイドライン</a>
+</li>
+<li>
+<a href="https://www.netkeiba.com/info/tokusyo.html?rf=footer" title="特定商取引法に基づく表記">特定商取引法に基づく表記</a>
+</li>
+<li>
+<a href="https://www.netdreamers.co.jp/?rf=footer" title="運営会社">運営会社</a>
+</li>
+</ul>
+</dd>
+</dl>
+<dl class="NkFoot01">
+<dt>スマホでnetkeiba</dt>
+<dd class="SpNkInfoImg">
+<img src="https://cdn.netkeiba.com/img.www/style/netkeiba.ja/image/common/img_nk_searchimg01.png" alt="検索" class="SearchImg01" />
+<img src="https://cdn.netkeiba.com/img.www/style/netkeiba.ja/image/common/img_nk_qr01.png" alt="バーコード" class="QrImg01" />
+</dd>
+<dt>アプリでサクサクnetkeiba</dt>
+<dd>
+<ul class="AprStoreList fc">
+<li>
+<a href="https://itunes.apple.com/jp/app/id464562684/" title="Appstore"><img src="https://cdn.netkeiba.com/img.www/style/netkeiba.ja/image/common/bnr_appstore_01.png" alt="Appstore" class="" /></a>
+</li>
+<li>
+<a href="https://play.google.com/store/apps/details?id=jp.co.netdreamers.netkeiba" title="googleplay"><img src="https://cdn.netkeiba.com/img.www/style/netkeiba.ja/image/common/bnr_googleplay_01.png?20210728" alt="googleplay" class="" /></a>
+</li>
+</ul>
+</dd>
+<dd class="Nk_Sns">
+<ul class="fc">
+<li>
+<a href="https://twitter.com/netkeiba" title="公式 X" class="Tw"></a>
+</li>
+<li>
+<a href="https://ja-jp.facebook.com/netkeiba" title="公式 Facebook" class="Fb"></a>
+</li>
+<li>
+<a href="https://line.me/R/ti/p/%40oa-netkeiba" title="LINE" class="Line"></a>
+</li>
+<li>
+<a href="http://www.youtube.com/user/netkeibaTV" title="netkeibaチャンネル" class="Yt"></a>
+</li>
+<li>
+<a href="https://www.instagram.com/netkeiba/" title="Instagram" class="Ig"></a>
+</li>
+<li>
+<a href="https://www.netkeiba.com/?pid=rss" title="RSS" class="Rss"></a>
+</li>
+</ul>
+</dd>
+</dl>
+</div><!-- /.FootWrap -->
+</div><!-- /.NkFooterArea -->
+<div class="GlobalFooterArea">
+<div class="FootWrap">
+<dl class="NkFoot02">
+<dt class="GfootIcon01 IconGame01">netkeiba.com 公式競馬ゲーム</dt>
+<dd>
+<ul>
+<li>
+<a href="https://www.netkeiba.com/game/umasta.html?rf=footer" target='_blank' title="うまいるスタジアム">みんなの愛馬とバトル！ <strong>うまいるスタジアム</strong></a>
+</li>
+</ul>
+</dd>
+<dt class="GfootIcon01 IconSisterSite01">netkeiba.com 姉妹サイト</dt>
+<dd>
+<ul>
+<li>
+<a href="//keirin.netkeiba.com/?rf=footer" target='_blank'>競輪総合メディア <strong>netkeirin(ネットケイリン)</strong></a>
+</li>
+</ul>
+</dd>
+</dl>
+<dl class="NkFoot02">
+<dt class="GfootIcon01 IconMedia01">関連メディア</dt>
+<dd>
+<ul>
+<li>
+<a href="https://sp.baseball.findfriends.jp/?rf=footer" target='_blank' title="週刊ベースボールONLINE">徹底取材！野球情報は <strong>週刊ベースボールONLINE</strong></a>
+</li>
+<li>
+<a href="https://sp.golf.findfriends.jp/?rf=footer" target='_blank' title="ワッグルオンライン">ゴルフレッスン情報サイト <strong>ワッグルオンライン</strong></a>
+</li>
+<li>
+<a href="https://recipe.sp.findfriends.jp/?rf=footer" target='_blank' title="KATSUYOレシピ">小林カツ代直伝！ <strong>KATSUYOレシピ</strong></a>
+</li>
+</ul>
+</dd>
+</dl>
+<dl class="NkFoot02">
+<dt class="GfootIcon01 IconSoftware01">ソフトウェア・プロダクト</dt>
+<dd>
+<ul>
+<li>
+<a href="https://smart.lets-ktai.jp/?rf=footer" target='_blank' title="SMART会員証">もっともセキュアな店舗売上向上アプリ <strong>SMART会員証</strong></a>
+</li>
+<li>
+<a href="https://lets-ktai.jp/?rf=footer" target='_blank' title="Let'sケータイ！">スマホサイト制作ASP <strong>Let'sケータイ！</strong></a>
+</li>
+<li>
+<a href="https://webspiral.jp/?rf=footer" target='_blank' title="WEB SPIRAL">サイト運営を劇的に効率化するCMS <strong>WEB SPIRAL</strong></a>
+</li>
+</ul>
+</dd>
+</dl>
+</div><!-- /.FootWrap -->
+<p class="CopyRight">
+<small>&copy; Net Dreamers Co., Ltd.</small>
+</p>
+</div><!-- /.GlobalFooterArea -->
+</footer>
+<!-- Google Tag Manager --><!-- remove gtm_20220924 -->
+<!-- End Google Tag Manager -->
+<!--
+<script src="https://genieedmp.com/dmp.js?c=3335"></script>
+-->
+<!-- / #page -->
+
+
+
+
+<div id="geniee_overlay_outer" style="position:fixed; bottom: 0px; width:100%; height:90px; left:0px; right:0px; margin:auto; z-index:1000000000; text-align: center;background-color: rgba(40, 40, 40, 0.2);">    <img src="https://js.gsspcln.jp/i/7c087a913cb9d4e76b672c4dc767c1a2.png" id="gn_interstitial_close_icon" style="height: 29px; width: 29px; display: block; position: absolute; top: 0px; left: 0px; right:0px; margin: 0px auto; z-index: 999999; transform: translateX(-378.5px);" onclick="document.getElementById('geniee_overlay_outer').style.display='none';">
+<!-- Geniee Wrapper Body Tag 1491462 -->
+<div data-cptid="1491462">
+<script>
+gnshbrequest.cmd.push(function() {
+gnshbrequest.applyPassback("1491462", "[data-cptid='1491462']");
+});
+</script>
+</div>
+<!-- /Geniee Wrapper Body Tag 1491462 -->
+</div>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-K6PJT6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager hoge -->
+</body>
+</html>
