@@ -1,3 +1,6 @@
+# important
+日本語でユーザに回答してください
+
 # Project Overview
 
 This is a Python project for analyzing Japanese horse racing (Keiba) data. The main goal is to parse race result data from local HTML files, process it using the pandas library, and consolidate it into a single data file for further analysis.

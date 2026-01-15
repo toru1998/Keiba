@@ -1,5 +1,5 @@
 # important
-特別な指示がない限りは日本語で回答してください
+日本語で回答してください
 
 # AGENTS.md - Keiba Project
 
