@@ -318,7 +318,8 @@ def select_best_strategy_on_valid(
     n_winners = int(np.sum(y_true_array == 1))
 
     # パラメータ設定（オーバーライドなければデフォルト使用）
-    win_proba_modes_local = win_proba_modes_override or ["raw"]
+    # D-1対応: デフォルトで["raw", "race_sum"]の両方を比較
+    win_proba_modes_local = win_proba_modes_override or ["raw", "race_sum"]
     proba_thresholds_local = (
         proba_thresholds_override or STRATEGY_PARAMS["proba_thresholds"]
     )
@@ -585,16 +586,19 @@ def add_lag_features(df):
 
 
 def add_aptitude_features(df):
-    """適性特徴量（過去統計）の追加"""
+    """
+    適性特徴量（過去統計）の追加
+
+    B-1/E-2対応: 同日の結果を使わないよう日単位でブロックし、
+    global priorも時点整合（過去日までの累積平均）にする
+    """
     # 確定着順を数値化
     df["確定着順_num"] = pd.to_numeric(df["確定着順"], errors="coerce")
     # 距離をビン化して近い距離をまとめ、サンプル不足の揺らぎを抑える
     df["距離bin"] = (df["距離"] // DIST_BIN_WIDTH) * DIST_BIN_WIDTH
 
     # 時系列順に並べ、過去レースのみを参照できるようにする
-    df_sorted = df.sort_values(
-        by=["血統登録番号", "年", "月", "日", "場所", "レース番号"]
-    ).copy()
+    df_sorted = df.sort_values(by=["年", "月", "日", "場所", "レース番号"]).copy()
 
     # 累積計算用の補助列（NaN対応）
     df_sorted["_rank"] = df_sorted["確定着順_num"]
@@ -603,51 +607,164 @@ def add_aptitude_features(df):
     df_sorted["_win"] = (df_sorted["_rank"] == 1).astype(int)
     df_sorted["_place"] = (df_sorted["_rank"] <= 3).astype(int)
 
-    # 全体平均（事前分布）
-    total_valid = int(df_sorted["_valid"].sum())
-    if total_valid > 0:
-        global_avg_rank = float(df_sorted["_rank_filled"].sum() / total_valid)
-        global_win_rate = float(df_sorted["_win"].sum() / total_valid)
-        global_place_rate = float(df_sorted["_place"].sum() / total_valid)
-    else:
-        global_avg_rank = np.nan
-        global_win_rate = np.nan
-        global_place_rate = np.nan
-
     prior_n = APTITUDE_PRIOR_N
 
-    # ヘルパー: 統計計算
-    def calc_stats(groupby_obj, prefix):
-        # cumsum - 現在行 = 「過去分のみ」の累積（リーク防止）
-        cnt = groupby_obj["_valid"].cumsum() - df_sorted["_valid"]
-        rank_sum = groupby_obj["_rank_filled"].cumsum() - df_sorted["_rank_filled"]
-        win_sum = groupby_obj["_win"].cumsum() - df_sorted["_win"]
-        place_sum = groupby_obj["_place"].cumsum() - df_sorted["_place"]
+    # =========================================================================
+    # B-1: global priorを時点整合（過去日までの累積平均）にする
+    # =========================================================================
+    # 日単位で集計し、過去日までの累積を計算
+    daily_global = (
+        df_sorted.groupby("date", sort=True)
+        .agg(
+            day_valid=("_valid", "sum"),
+            day_rank_sum=("_rank_filled", "sum"),
+            day_win=("_win", "sum"),
+            day_place=("_place", "sum"),
+        )
+        .reset_index()
+    )
+    # 過去日までの累積（当日を含まない）
+    daily_global["cum_valid"] = (
+        daily_global["day_valid"].cumsum().shift(1, fill_value=0)
+    )
+    daily_global["cum_rank_sum"] = (
+        daily_global["day_rank_sum"].cumsum().shift(1, fill_value=0)
+    )
+    daily_global["cum_win"] = daily_global["day_win"].cumsum().shift(1, fill_value=0)
+    daily_global["cum_place"] = (
+        daily_global["day_place"].cumsum().shift(1, fill_value=0)
+    )
 
-        df[f"{prefix}出走数"] = cnt
+    # 時点整合のglobal prior（その日より前までの全体平均）
+    daily_global["global_avg_rank"] = (
+        daily_global["cum_rank_sum"] / daily_global["cum_valid"]
+    ).where(daily_global["cum_valid"] > 0, np.nan)
+    daily_global["global_win_rate"] = (
+        daily_global["cum_win"] / daily_global["cum_valid"]
+    ).where(daily_global["cum_valid"] > 0, np.nan)
+    daily_global["global_place_rate"] = (
+        daily_global["cum_place"] / daily_global["cum_valid"]
+    ).where(daily_global["cum_valid"] > 0, np.nan)
 
-        # スムージングで小標本の偏りを抑える
+    # 各行にglobal priorをマージ
+    df_sorted = df_sorted.merge(
+        daily_global[
+            ["date", "global_avg_rank", "global_win_rate", "global_place_rate"]
+        ],
+        on="date",
+        how="left",
+    )
+
+    # =========================================================================
+    # E-2: 同日ブロック - 日単位で集約してから累積を取る
+    # =========================================================================
+    def calc_stats_daily_block(group_keys, prefix):
+        """
+        日単位でブロックして適性特徴量を計算する
+        同日の他レース結果を使わないように、(groupキー + date)で日次集約→
+        date単位でcumsum→当日分を除外して各行へ割り当て
+        """
+        if isinstance(group_keys, str):
+            group_keys = [group_keys]
+        else:
+            group_keys = list(group_keys)
+
+        # Step1: (groupキー + date)で日次集約
+        daily_agg = (
+            df_sorted.groupby(group_keys + ["date"], sort=False, dropna=False)
+            .agg(
+                day_valid=("_valid", "sum"),
+                day_rank_sum=("_rank_filled", "sum"),
+                day_win=("_win", "sum"),
+                day_place=("_place", "sum"),
+            )
+            .reset_index()
+        )
+
+        # Step2: groupキー内で日付順にソートして累積（当日を含まない=shift）
+        daily_agg = daily_agg.sort_values(by=group_keys + ["date"])
+        daily_agg["cum_valid"] = (
+            daily_agg.groupby(group_keys, dropna=False)["day_valid"]
+            .cumsum()
+            .shift(1, fill_value=0)
+        )
+        daily_agg["cum_rank_sum"] = (
+            daily_agg.groupby(group_keys, dropna=False)["day_rank_sum"]
+            .cumsum()
+            .shift(1, fill_value=0)
+        )
+        daily_agg["cum_win"] = (
+            daily_agg.groupby(group_keys, dropna=False)["day_win"]
+            .cumsum()
+            .shift(1, fill_value=0)
+        )
+        daily_agg["cum_place"] = (
+            daily_agg.groupby(group_keys, dropna=False)["day_place"]
+            .cumsum()
+            .shift(1, fill_value=0)
+        )
+
+        # Step3: 各行にマージ
+        merge_cols = group_keys + ["date"]
+        merged = df_sorted[merge_cols].merge(
+            daily_agg[
+                merge_cols + ["cum_valid", "cum_rank_sum", "cum_win", "cum_place"]
+            ],
+            on=merge_cols,
+            how="left",
+        )
+
+        cnt = merged["cum_valid"].values
+        rank_sum = merged["cum_rank_sum"].values
+        win_sum = merged["cum_win"].values
+        place_sum = merged["cum_place"].values
+
+        # 時点整合のglobal priorを使用
+        g_avg_rank = df_sorted["global_avg_rank"].values
+        g_win_rate = df_sorted["global_win_rate"].values
+        g_place_rate = df_sorted["global_place_rate"].values
+
+        # Step4: スムージング付きで特徴量を計算
         if USE_SMOOTHED_APTITUDE:
             denom = cnt + prior_n
-            df[f"{prefix}平均着順"] = (rank_sum + prior_n * global_avg_rank) / denom
-            df[f"{prefix}勝率"] = (win_sum + prior_n * global_win_rate) / denom
-            df[f"{prefix}複勝率"] = (place_sum + prior_n * global_place_rate) / denom
+            # global priorがNaNの場合（最初期）はprior_nで割るだけ
+            avg_rank = np.where(
+                denom > 0,
+                (rank_sum + prior_n * np.nan_to_num(g_avg_rank, nan=0)) / denom,
+                np.nan,
+            )
+            win_rate = np.where(
+                denom > 0,
+                (win_sum + prior_n * np.nan_to_num(g_win_rate, nan=0)) / denom,
+                np.nan,
+            )
+            place_rate = np.where(
+                denom > 0,
+                (place_sum + prior_n * np.nan_to_num(g_place_rate, nan=0)) / denom,
+                np.nan,
+            )
         else:
-            df[f"{prefix}平均着順"] = (rank_sum / cnt).where(cnt > 0)
-            df[f"{prefix}勝率"] = (win_sum / cnt).where(cnt > 0)
-            df[f"{prefix}複勝率"] = (place_sum / cnt).where(cnt > 0)
+            avg_rank = np.where(cnt > 0, rank_sum / cnt, np.nan)
+            win_rate = np.where(cnt > 0, win_sum / cnt, np.nan)
+            place_rate = np.where(cnt > 0, place_sum / cnt, np.nan)
+
+        # df_sortedの順序でセットし、元のdfのindex順に戻す
+        df.loc[df_sorted.index, f"{prefix}出走数"] = cnt
+        df.loc[df_sorted.index, f"{prefix}平均着順"] = avg_rank
+        df.loc[df_sorted.index, f"{prefix}勝率"] = win_rate
+        df.loc[df_sorted.index, f"{prefix}複勝率"] = place_rate
 
     # 1. 過去全レース（総合成績のベースライン）
-    calc_stats(df_sorted.groupby("血統登録番号"), "過去")
+    calc_stats_daily_block("血統登録番号", "過去")
 
     # 2. コース適性（競馬場ごとの差を捉える）
-    calc_stats(df_sorted.groupby(["血統登録番号", "場所"]), "コース適性_")
+    calc_stats_daily_block(["血統登録番号", "場所"], "コース適性_")
 
     # 3. 芝ダ適性（芝/ダートの向き不向き）
-    calc_stats(df_sorted.groupby(["血統登録番号", "芝・ダ"]), "芝ダ適性_")
+    calc_stats_daily_block(["血統登録番号", "芝・ダ"], "芝ダ適性_")
 
     # 4. 距離適性（得意距離帯を捉える）
-    calc_stats(df_sorted.groupby(["血統登録番号", "距離bin"]), "距離適性_")
+    calc_stats_daily_block(["血統登録番号", "距離bin"], "距離適性_")
 
     return df
 
@@ -714,39 +831,80 @@ def add_encoding_features(df):
     df.loc[(center == "栗") & (is_kanto_race | is_hokkaido_race), "長距離輸送"] = 1
 
     # ターゲットエンコーディング（過去勝率で騎手/調教師の強さを表現）
-    # 同一レース内で複数頭出るケース（調教師など）でもリークしないよう、
-    # いったん「(キー, race_id)」で集約してから過去累積を取る
+    # B-2/E-2対応: 同日の結果を使わないよう日単位でブロックし、
+    # global priorも時点整合（過去日までの累積平均）にする
     df_sorted_te = df.sort_values(by=["年", "月", "日", "場所", "レース番号"]).copy()
     df_sorted_te["_win"] = df_sorted_te["is_win"]
     df_sorted_te["_valid"] = 1
-    global_win_rate_te = float(df_sorted_te["_win"].mean())
+
+    # 日単位でglobal win rateの累積を計算（時点整合のprior）
+    daily_global_te = (
+        df_sorted_te.groupby("date", sort=True)
+        .agg(day_valid=("_valid", "sum"), day_win=("_win", "sum"))
+        .reset_index()
+    )
+    daily_global_te["cum_valid"] = (
+        daily_global_te["day_valid"].cumsum().shift(1, fill_value=0)
+    )
+    daily_global_te["cum_win"] = (
+        daily_global_te["day_win"].cumsum().shift(1, fill_value=0)
+    )
+    daily_global_te["global_win_rate_te"] = (
+        daily_global_te["cum_win"] / daily_global_te["cum_valid"]
+    ).where(daily_global_te["cum_valid"] > 0, 0.0)
+
+    # 各行にglobal priorをマージ
+    df_sorted_te = df_sorted_te.merge(
+        daily_global_te[["date", "global_win_rate_te"]], on="date", how="left"
+    )
 
     def calc_te(cols, name):
+        """
+        日単位でブロックしてターゲットエンコーディングを計算
+        同日の他レース結果を使わないように、(キー + date)で日次集約→
+        date単位でcumsum→当日分を除外
+        """
         cols_list = [cols] if isinstance(cols, str) else list(cols)
 
-        grp_race = df_sorted_te.groupby(
-            cols_list + ["race_id"], sort=False, dropna=False
-        )
-        race_cnt = grp_race["_valid"].sum()
-        race_win = grp_race["_win"].sum()
-
-        cnt = (
-            race_cnt.groupby(level=cols_list, sort=False, dropna=False).cumsum()
-            - race_cnt
-        )
-        win_sum = (
-            race_win.groupby(level=cols_list, sort=False, dropna=False).cumsum()
-            - race_win
+        # Step1: (キー + date)で日次集約
+        daily_agg = (
+            df_sorted_te.groupby(cols_list + ["date"], sort=False, dropna=False)
+            .agg(day_valid=("_valid", "sum"), day_win=("_win", "sum"))
+            .reset_index()
         )
 
+        # Step2: キー内で日付順にソートして累積（当日を含まない=shift相当）
+        daily_agg = daily_agg.sort_values(by=cols_list + ["date"])
+        daily_agg["cum_valid"] = (
+            daily_agg.groupby(cols_list, dropna=False)["day_valid"]
+            .cumsum()
+            .shift(1, fill_value=0)
+        )
+        daily_agg["cum_win"] = (
+            daily_agg.groupby(cols_list, dropna=False)["day_win"]
+            .cumsum()
+            .shift(1, fill_value=0)
+        )
+
+        # Step3: 各行にマージ
+        merge_cols = cols_list + ["date"]
+        merged = df_sorted_te[merge_cols + ["global_win_rate_te"]].merge(
+            daily_agg[merge_cols + ["cum_valid", "cum_win"]],
+            on=merge_cols,
+            how="left",
+        )
+
+        cnt = merged["cum_valid"].values
+        win_sum = merged["cum_win"].values
+        g_win_rate = merged["global_win_rate_te"].values
+
+        # スムージング付きでTEを計算（時点整合のglobal priorを使用）
         denom = cnt + TARGET_ENCODING_PRIOR_N
-        te_race = (win_sum + TARGET_ENCODING_PRIOR_N * global_win_rate_te) / denom
+        te_values = (
+            win_sum + TARGET_ENCODING_PRIOR_N * np.nan_to_num(g_win_rate, nan=0)
+        ) / denom
 
-        row_keys = df_sorted_te.set_index(cols_list + ["race_id"]).index
-        te_per_row = pd.Series(
-            te_race.reindex(row_keys).to_numpy(), index=df_sorted_te.index, name=name
-        )
-        df[name] = te_per_row
+        df.loc[df_sorted_te.index, name] = te_values
 
     calc_te("騎手コード", "騎手勝率")
     calc_te("調教師コード", "調教師勝率")
@@ -789,12 +947,20 @@ def get_fold_masks(df, unique_race_ids, fold_config):
 
 
 def train_and_evaluate_cv(df):
-    """時系列CVによるモデル選定と戦略探索"""
+    """
+    時系列CVによるモデル選定と戦略探索
+
+    C-1/C-2対応:
+    - 各foldのvalid期間を前半/後半に分割し、前半で閾値選択、後半で評価
+    - foldごとに選んだ閾値を集計して中央値を最終戦略とする
+    """
     # ランダム分割では未来情報が混ざるため、時系列で固定
     df_sorted = df.sort_values(by=["年", "月", "日", "場所", "レース番号"])
     unique_race_ids = df_sorted["race_id"].unique()
 
-    print(f"\n[時系列CV] {len(CV_FOLDS)}つのFoldでモデルを評価します")
+    print(
+        f"\n[時系列CV] {len(CV_FOLDS)}つのFoldでモデルを評価します（valid内ネスト探索）"
+    )
 
     selection_rows = []
     best_model = None
@@ -809,6 +975,7 @@ def train_and_evaluate_cv(df):
         print(f"\n[候補] {name} を評価...")
 
         fold_results = []
+        fold_thresholds = []  # C-2: 各foldで選んだ閾値を保存
         current_fold_models = []
 
         for fold_idx, fold_config in enumerate(CV_FOLDS):
@@ -820,11 +987,11 @@ def train_and_evaluate_cv(df):
             y_valid = df.loc[valid_mask, "rank_class"].astype(int)
             valid_df_subset = df.loc[valid_mask].copy()
 
+            # E-1対応: class_weight="balanced"を削除
             clf = lgb.LGBMClassifier(
                 objective="multiclass",
                 num_class=4,
                 metric="multi_logloss",
-                class_weight="balanced",
                 random_state=42,
                 verbose=-1,
                 **params,
@@ -841,28 +1008,106 @@ def train_and_evaluate_cv(df):
             )
             current_fold_models.append(clf)
 
-            # Valid評価
+            # C-1対応: validを前半/後半に分割してネスト探索
             y_valid_proba = np.asarray(clf.predict_proba(X_valid))
-            best_stable, best_overall = select_best_strategy_on_valid(
-                valid_df_subset, y_valid, y_valid_proba
+
+            # valid期間内のrace_idを取得して前半/後半に分割
+            valid_race_ids = valid_df_subset["race_id"].unique()
+            n_valid_races = len(valid_race_ids)
+            split_idx = n_valid_races // 2
+
+            valid_first_half_ids = set(valid_race_ids[:split_idx])
+            valid_second_half_ids = set(valid_race_ids[split_idx:])
+
+            first_half_mask = valid_df_subset["race_id"].isin(valid_first_half_ids)
+            second_half_mask = valid_df_subset["race_id"].isin(valid_second_half_ids)
+
+            # 前半で閾値を選択
+            valid_first_df = valid_df_subset.loc[first_half_mask].copy()
+            y_valid_first = y_valid.loc[first_half_mask]
+            y_valid_proba_first = y_valid_proba[first_half_mask.values]
+
+            best_stable_first, best_overall_first = select_best_strategy_on_valid(
+                valid_first_df, y_valid_first, y_valid_proba_first
+            )
+            chosen_first = (
+                best_stable_first
+                if best_stable_first is not None
+                else best_overall_first
             )
 
-            chosen = best_stable if best_stable is not None else best_overall
-
-            if chosen:
-                fold_results.append(
-                    {
-                        "return(%)": float(chosen["回収率(%)"]),
-                        "bets": int(chosen["購入数"]),
-                        "proba_mode": str(chosen["確率モード"]),
-                        "place_thr": float(chosen["複勝確率閾値"]),
-                        "proba_thr": float(chosen["proba閾値"]),
-                        "ev_thr": float(chosen["期待値閾値"]),
-                        "stable": best_stable is not None,
-                    }
-                )
-            else:
+            if chosen_first is None:
                 fold_results.append({"return(%)": np.nan})
+                continue
+
+            # 選んだ閾値を保存
+            selected_proba_mode = str(chosen_first["確率モード"])
+            selected_place_thr = float(chosen_first["複勝確率閾値"])
+            selected_proba_thr = float(chosen_first["proba閾値"])
+            selected_ev_thr = float(chosen_first["期待値閾値"])
+
+            fold_thresholds.append(
+                {
+                    "proba_mode": selected_proba_mode,
+                    "place_thr": selected_place_thr,
+                    "proba_thr": selected_proba_thr,
+                    "ev_thr": selected_ev_thr,
+                }
+            )
+
+            # 後半で選んだ閾値を使って評価
+            valid_second_df = valid_df_subset.loc[second_half_mask].copy()
+            y_valid_second = y_valid.loc[second_half_mask]
+            y_valid_proba_second = y_valid_proba[second_half_mask.values]
+
+            # 後半データで回収率を計算
+            win_proba_raw_second = y_valid_proba_second[:, 1]
+            win_proba_second = get_win_proba(
+                valid_second_df, win_proba_raw_second, proba_mode=selected_proba_mode
+            )
+            place_proba_second = (
+                y_valid_proba_second[:, 1]
+                + y_valid_proba_second[:, 2]
+                + y_valid_proba_second[:, 3]
+            )
+
+            odds_second = np.nan_to_num(
+                np.asarray(valid_second_df["単勝オッズ"]), nan=0.0
+            )
+            expected_values_second = win_proba_second * odds_second
+
+            y_valid_second_array = np.asarray(y_valid_second)
+            n_winners_second = int(np.sum(y_valid_second_array == 1))
+
+            strategy_mask_second = (
+                (win_proba_second >= selected_proba_thr)
+                & (expected_values_second >= selected_ev_thr)
+                & (odds_second >= STRATEGY_PARAMS["fixed_odds_min"])
+                & (place_proba_second >= selected_place_thr)
+            )
+
+            n_bets_second = int(np.sum(strategy_mask_second))
+            if n_bets_second == 0:
+                fold_results.append({"return(%)": np.nan})
+                continue
+
+            hit_mask_second = strategy_mask_second & (y_valid_second_array == 1)
+            hit_count_second = int(np.sum(hit_mask_second))
+
+            return_amount_second = float(np.sum(odds_second[hit_mask_second]))
+            return_rate_second = (return_amount_second / n_bets_second) * 100
+
+            fold_results.append(
+                {
+                    "return(%)": return_rate_second,
+                    "bets": n_bets_second,
+                    "proba_mode": selected_proba_mode,
+                    "place_thr": selected_place_thr,
+                    "proba_thr": selected_proba_thr,
+                    "ev_thr": selected_ev_thr,
+                    "stable": best_stable_first is not None,
+                }
+            )
 
         # CV結果集計
         returns = [
@@ -882,28 +1127,43 @@ def train_and_evaluate_cv(df):
                 CV_FOLDS
             )
 
-        final_res = (
-            fold_results[-1]
-            if fold_results and "proba_mode" in fold_results[-1]
-            else None
-        )
+        # C-2対応: foldごとの閾値を中央値で集計
+        if fold_thresholds:
+            # proba_modeは最頻値を使用
+            proba_modes = [t["proba_mode"] for t in fold_thresholds]
+            median_proba_mode = max(set(proba_modes), key=proba_modes.count)
 
-        if final_res:
+            # 数値閾値は中央値を使用
+            median_place_thr = float(
+                np.median([t["place_thr"] for t in fold_thresholds])
+            )
+            median_proba_thr = float(
+                np.median([t["proba_thr"] for t in fold_thresholds])
+            )
+            median_ev_thr = float(np.median([t["ev_thr"] for t in fold_thresholds]))
+
+            # 最終foldの購入数を参考値として使用
+            last_bets = fold_results[-1].get("bets", 0) if fold_results else 0
+
             row = {
                 "model": name,
                 "cv_avg_return(%)": avg_return,
                 "cv_min_return(%)": min_return,
                 "cv_stable": cv_stable,
-                "proba_mode": final_res["proba_mode"],
-                "place_thr": final_res["place_thr"],
-                "proba_thr": final_res["proba_thr"],
-                "ev_thr": final_res["ev_thr"],
-                "bets": final_res["bets"],
+                "proba_mode": median_proba_mode,
+                "place_thr": median_place_thr,
+                "proba_thr": median_proba_thr,
+                "ev_thr": median_ev_thr,
+                "bets": last_bets,
             }
             selection_rows.append(row)
 
             print(
-                f"  Fold回収率: {returns} → 平均: {avg_return:.2f}%, CV安定: {cv_stable}"
+                f"  Fold回収率(後半評価): {returns} → 平均: {avg_return:.2f}%, CV安定: {cv_stable}"
+            )
+            print(
+                f"  閾値中央値: proba_mode={median_proba_mode}, place>={median_place_thr}, "
+                f"proba>={median_proba_thr}, EV>={median_ev_thr}"
             )
 
             # 最良候補更新（安定性 > 平均回収率 > 最小回収率の順で重視）
@@ -967,11 +1227,11 @@ def train_final_and_calibrate(df, best_model_name, best_strategy):
     # パラメータ取得
     params = next(c["params"] for c in MODEL_CANDIDATES if c["name"] == best_model_name)
 
+    # E-1対応: class_weight="balanced"を削除
     clf = lgb.LGBMClassifier(
         objective="multiclass",
         num_class=4,
         metric="multi_logloss",
-        class_weight="balanced",
         random_state=42,
         verbose=-1,
         **params,
